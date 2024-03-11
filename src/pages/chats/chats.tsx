@@ -11,6 +11,8 @@ import SearchIcon from "/search-icon.svg";
 import NewChatIcon from "/newChat.svg";
 
 import { fakeChats } from "./fakeData";
+import Header from "@/components/header";
+import EditBtn from "@/components/editBtn";
 
 function Chats() {
 	const active = useLocation().pathname;
@@ -18,8 +20,8 @@ function Chats() {
 	return (
 		<>
 			<SidebarWrapper>
-				<header className="flex items-center gap-4 p-4 h-[70px] justify-between">
-					<div className="text-blue text-[17px] md:hidden">Edit</div>
+				<Header className="h-[70px] gap-4">
+					<EditBtn className="md:hidden" />
 
 					<div className="relative hidden w-full md:block">
 						<Input className="h-9 pl-9 rounded-[10px]" />
@@ -41,7 +43,7 @@ function Chats() {
 							className="cursor-pointer"
 						/>
 					</NavLink>
-				</header>
+				</Header>
 
 				<ul className="h-[calc(100%-140px)] md:h-[calc(100%-120px)] scrollbar-none">
 					{fakeChats.map((chat) => {
