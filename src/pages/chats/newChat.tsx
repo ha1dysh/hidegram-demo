@@ -1,7 +1,7 @@
-import Switcher from "../../components/ui/switcher";
-import BackBtn from "../../components/backBtn";
-import EditButton from "../../components/editBtn";
-import Input from "../../components/ui/input";
+import Switcher from "@/components/ui/switcher";
+import BackBtn from "@/components/backBtn";
+import EditButton from "@/components/editBtn";
+import Input from "@/components/ui/input";
 
 function NewChat() {
 	return (

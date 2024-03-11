@@ -1,9 +1,9 @@
 import { NavLink, Outlet } from "react-router-dom";
-import ContentWrapper from "../../components/contentWrapper";
-import Header from "../../components/header";
-import Menu from "../../components/menu/menu";
-import SidebarWrapper from "../../components/sidebarWrapper";
-import Divider from "../../components/ui/divider";
+import ContentWrapper from "@/components/contentWrapper";
+import Header from "@/components/header";
+import Menu from "@/components/menu/menu";
+import SidebarWrapper from "@/components/sidebarWrapper";
+import Divider from "@/components/ui/divider";
 
 function Settings() {
 	return (

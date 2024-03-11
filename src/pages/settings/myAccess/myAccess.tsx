@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import BackBtn from "../../../components/backBtn";
-import EditBtn from "../../../components/editBtn";
-import Header from "../../../components/header";
-import Divider from "../../../components/ui/divider";
+import BackBtn from "@/components/backBtn";
+import EditBtn from "@/components/editBtn";
+import Header from "@/components/header";
+import Divider from "@/components/ui/divider";
 import Switcher from "@/components/ui/switcher";
 
 function MyAccess() {

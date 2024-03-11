@@ -1,5 +1,5 @@
-import Menu from "../../components/menu/menu";
-import SidebarWrapper from "../../components/sidebarWrapper";
+import Menu from "@/components/menu/menu";
+import SidebarWrapper from "@/components/sidebarWrapper";
 
 function SidebarAccess() {
 	return (

@@ -1,10 +1,10 @@
 import { twMerge } from "tailwind-merge";
-import BackBtn from "../../components/backBtn";
-import Header from "../../components/header";
-import EditButton from "../../components/editBtn";
-import Input from "../../components/ui/input";
-import Divider from "../../components/ui/divider";
-import Switcher from "../../components/ui/switcher";
+import BackBtn from "@/components/backBtn";
+import Header from "@/components/header";
+import EditButton from "@/components/editBtn";
+import Input from "@/components/ui/input";
+import Divider from "@/components/ui/divider";
+import Switcher from "@/components/ui/switcher";
 
 function ChatSettings() {
 	return (
