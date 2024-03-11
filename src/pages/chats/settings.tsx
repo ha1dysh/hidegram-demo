@@ -35,17 +35,17 @@ function ChatSettings() {
 					<div className="bg-darkGray rounded-[10px]">
 						<Input
 							defaultValue="Chat Name"
-							className="h-[50px] px-4 text-gray md:rounded-[10px]"
+							className="h-[50px] text-gray md:rounded-[10px]"
 						/>
 						<Divider full />
 						<Input
 							defaultValue="1234567"
-							className="h-[50px] px-4 text-gray"
+							className="h-[50px] text-gray"
 						/>
 						<Divider full />
 						<Input
 							defaultValue="Onxiros"
-							className="h-[50px] px-4 text-gray md:rounded-[10px]"
+							className="h-[50px] text-gray md:rounded-[10px]"
 						/>
 					</div>
 				</div>
@@ -58,7 +58,7 @@ function ChatSettings() {
 						<Input
 							type="password"
 							defaultValue="Chat Name"
-							className="h-[50px] px-4 text-gray md:rounded-[10px]"
+							className="h-[50px] text-gray md:rounded-[10px]"
 						/>
 						<img
 							src="/show-password.svg"

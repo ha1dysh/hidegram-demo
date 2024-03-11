@@ -9,7 +9,7 @@ function Input({ className, ...props }: Props) {
 		<input
 			{...props}
 			className={twMerge(
-				"w-full caret-blue outline-none bg-darkGray",
+				"w-full px-4 bg-darkGray caret-blue outline-none",
 				className
 			)}
 		/>

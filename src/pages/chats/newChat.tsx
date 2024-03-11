@@ -19,7 +19,7 @@ function NewChat() {
 					</div>
 					<Input
 						placeholder="Re-Enter Your Password"
-						className="h-[50px] px-4 md:rounded-[10px] text-[17px] mb-[9px]"
+						className="h-[50px] md:rounded-[10px] text-[17px] mb-[9px]"
 					/>
 					<div className="px-4 text-sm text-gray">
 						If you change your password, your messages recipient
@@ -47,7 +47,7 @@ function NewChat() {
 					</div>
 					<Input
 						placeholder="Enter Your Master Password"
-						className="h-[50px] px-4 md:rounded-[10px] text-[17px] mb-[9px]"
+						className="h-[50px] md:rounded-[10px] text-[17px] mb-[9px]"
 					/>
 					<div className="px-4 text-sm text-gray">
 						If you change your password, your messages recipient
@@ -61,7 +61,7 @@ function NewChat() {
 					</div>
 					<Input
 						placeholder="Enter Your Master Password"
-						className="h-[50px] px-4 md:rounded-[10px] text-[17px] mb-[9px]"
+						className="h-[50px] md:rounded-[10px] text-[17px] mb-[9px]"
 					/>
 					<div className="px-4 text-sm text-gray">
 						If you change your password, your messages recipient
@@ -75,7 +75,7 @@ function NewChat() {
 					</div>
 					<Input
 						placeholder="Enter Your Master Password"
-						className="h-[50px] px-4 md:rounded-[10px] text-[17px] mb-[9px]"
+						className="h-[50px] md:rounded-[10px] text-[17px] mb-[9px]"
 					/>
 					<div className="px-4 text-sm text-gray">
 						If you change your password, your messages recipient

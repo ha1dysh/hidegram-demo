@@ -21,7 +21,7 @@ function EditPassword() {
 						<Input
 							type="password"
 							placeholder="Text"
-							className="h-[50px] px-4 text-gray md:rounded-[10px]"
+							className="h-[50px] text-gray md:rounded-[10px]"
 						/>
 						<img
 							src="/show-password.svg"
@@ -43,7 +43,7 @@ function EditPassword() {
 						<Input
 							type="password"
 							placeholder="Text Field"
-							className="h-[50px] px-4 text-gray md:rounded-[10px]"
+							className="h-[50px] text-gray md:rounded-[10px]"
 						/>
 						<img
 							src="/show-password.svg"
@@ -65,7 +65,7 @@ function EditPassword() {
 						<Input
 							type="password"
 							placeholder="Text Field"
-							className="h-[50px] px-4 text-gray md:rounded-[10px]"
+							className="h-[50px] text-gray md:rounded-[10px]"
 						/>
 						<img
 							src="/show-password.svg"

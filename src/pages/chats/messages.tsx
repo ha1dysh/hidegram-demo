@@ -65,7 +65,7 @@ function Messages() {
 
 				<Input
 					placeholder="Text"
-					className="h-[38px] bg-black rounded-[20px] px-4"
+					className="h-[38px] bg-black rounded-[20px]"
 				/>
 
 				<button className="m-3 md:min-w-32">

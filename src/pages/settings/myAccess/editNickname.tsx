@@ -17,13 +17,13 @@ function EditNickname() {
 				<Input
 					type="text"
 					placeholder="Password"
-					className="h-[50px] px-4 md:rounded-[10px]"
+					className="h-[50px] md:rounded-[10px]"
 				/>
 				<Divider />
 				<Input
 					type="text"
 					placeholder="Change Nickname"
-					className="h-[50px] px-4 md:rounded-[10px]"
+					className="h-[50px] md:rounded-[10px]"
 				/>
 			</div>
 		</>
