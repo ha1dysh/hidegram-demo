@@ -5,7 +5,7 @@ type Props = React.ComponentProps<"button"> & {
 	className?: string;
 };
 
-function BackLink({ className, ...props }: Props) {
+function BackBtn({ className, ...props }: Props) {
 	const navigate = useNavigate();
 
 	return (
@@ -23,4 +23,4 @@ function BackLink({ className, ...props }: Props) {
 	);
 }
 
-export default BackLink;
+export default BackBtn;

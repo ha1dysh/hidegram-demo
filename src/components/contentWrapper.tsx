@@ -5,7 +5,15 @@ function ContentWrapper({ children }: { children: React.ReactNode }) {
 	const isMobile = window.innerWidth < 768;
 	const location = useLocation().pathname;
 
-	const isLocation = ["userId", "newChat"].some((s) => location.includes(s));
+	const isLocation = [
+		"userId",
+		"new-chat",
+		"chat-settings",
+		"my-access",
+		"edit-nickname",
+		"edit-password",
+		"language",
+	].some((s) => location.includes(s));
 
 	return (
 		<div

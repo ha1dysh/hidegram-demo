@@ -1,5 +1,18 @@
-function EditButton() {
-	return <button className="text-[17] text-blue">Edit</button>;
+import { twMerge } from "tailwind-merge";
+
+type Props = React.ComponentProps<"button"> & {
+	className?: string;
+};
+
+function EditBtn({ className, ...props }: Props) {
+	return (
+		<button
+			{...props}
+			className={twMerge("text-[17px] text-blue", className)}
+		>
+			Edit
+		</button>
+	);
 }
 
-export default EditButton;
+export default EditBtn;

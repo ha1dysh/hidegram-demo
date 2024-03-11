@@ -11,7 +11,7 @@ function Header({ children, className, ...props }: Props) {
 		return (
 			<header
 				className={twMerge(
-					"px-4 flex justify-between items-center bg-darkGray",
+					"h-[60px] px-[14px] flex justify-between items-center bg-darkGray",
 					className
 				)}
 				{...props}
@@ -24,7 +24,7 @@ function Header({ children, className, ...props }: Props) {
 	return (
 		<header
 			className={twMerge(
-				"px-4 flex justify-between items-center bg-black border border-borderColor",
+				"h-[50px] px-4 flex justify-between items-center bg-black border border-borderColor",
 				className
 			)}
 			{...props}
