@@ -1,128 +1,122 @@
 import { NavLink } from "react-router-dom";
+import Header from "@/components/header";
 import BackBtn from "@/components/backBtn";
 import EditBtn from "@/components/editBtn";
-import Header from "@/components/header";
-import Divider from "@/components/ui/divider";
+import Scrollable from "@/components/scrollable";
 import Switcher from "@/components/ui/switcher";
+import Divider from "@/components/ui/divider";
 
 function MyAccess() {
 	return (
 		<>
 			<Header className="justify-between">
 				<BackBtn />
-				<span>Access</span>
+				<span className="text-lg font-semibold">Access</span>
 				<EditBtn />
 			</Header>
 
-			<div className="h-[calc(100%-60px)] md:h-[calc(100%-50px)] scrollbar-none">
-				<p className="max-w-2xl mt-[35px] mb-[6px] pl-4 mx-auto text-sm text-gray">
-					ACCESS SETTINGS
-				</p>
-				<div className="max-w-2xl mx-auto flex flex-col gap-[35px]">
+			<Scrollable className="max-w-2xl mx-auto py-[35px] gap-[35px]">
+				<div>
+					<p className="mb-[6px] pl-4 text-sm text-gray">
+						ACCESS SETTINGS
+					</p>
 					<div className="bg-darkGray md:rounded-[10px]">
 						<NavLink
 							to="/settings/edit-nickname"
-							className="relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-[#111] cursor-pointer"
+							className="h-[50px] px-4 flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">
 								Edit Nickname
 							</p>
-							<img
-								src="/arrow-right.svg"
-								alt="arrow left icon"
-								className="absolute -translate-y-1/2 right-4 top-1/2"
-							/>
+							<img src="/arrow-right.svg" alt="arrow left icon" />
 						</NavLink>
 						<Divider full />
 
 						<NavLink
 							to="/settings/edit-password"
-							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-[#111] cursor-pointer"
+							className="h-[50px] px-4 flex justify-between items-center hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">
 								Edit Password
 							</p>
-							<img
-								src="/arrow-right.svg"
-								alt="arrow left icon"
-								className="absolute -translate-y-1/2 right-4 top-1/2"
-							/>
+							<img src="/arrow-right.svg" alt="arrow left icon" />
 						</NavLink>
 						<Divider full />
 
 						<NavLink
 							to="/settings/my-access"
-							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-[#111] md:rounded-b-[10px] cursor-pointer"
+							className="h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">
 								Default Nickname
 							</p>
-							<p className="text-[15px] text-gray mr-4">
-								Unknownuser5213
-							</p>
-							<img
-								src="/arrow-right.svg"
-								alt="arrow left icon"
-								className="absolute -translate-y-1/2 right-4 top-1/2"
-							/>
+							<div className="flex gap-4">
+								<p className="text-[15px] text-gray">
+									Unknownuser5213
+								</p>
+								<img
+									src="/arrow-right.svg"
+									alt="arrow left icon"
+								/>
+							</div>
 						</NavLink>
 					</div>
+				</div>
 
-					<div>
-						<p className="max-w-2xl mb-[6px] pl-4 mx-auto text-sm text-gray">
-							CHAT SETTINGS
-						</p>
-						<div className="bg-darkGray md:rounded-[10px]">
-							<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-[10px] text-[17px] hover:bg-[#111] cursor-pointer">
-								<span className="select-none">
-									Save Unread Messages
-								</span>
-								<Switcher />
-							</label>
-							<Divider full />
-
-							<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-[10px] text-[17px] hover:bg-[#111] cursor-pointer">
-								<span className="select-none">
-									Load All Chats On Connection
-								</span>
-								<Switcher />
-							</label>
-							<Divider full />
-
-							<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-[10px] text-[17px] hover:bg-[#111] cursor-pointer">
-								<span className="select-none">
-									Provide Default Data in Change
-								</span>
-								<Switcher />
-							</label>
-						</div>
-					</div>
-
-					<div className="w-full max-w-2xl mx-auto">
-						<div className="px-4 text-sm text-gray mb-[6px]">
-							SYNCHRONIZATION
-						</div>
-						<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-[10px] text-[17px] mb-[9px] hover:bg-[#111] cursor-pointer">
+				<div>
+					<p className="mb-[6px] pl-4 text-sm text-gray">
+						CHAT SETTINGS
+					</p>
+					<div className="bg-darkGray md:rounded-[10px]">
+						<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-t-[10px] text-[17px] hover:bg-hover cursor-pointer">
 							<span className="select-none">
-								Save Settings To Access
+								Save Unread Messages
 							</span>
 							<Switcher />
 						</label>
-						<div className="px-4 text-sm text-gray">
-							Turn this off if you want to receive notifications
-							only from your active account.
-						</div>
+						<Divider full />
+
+						<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 text-[17px] hover:bg-hover cursor-pointer">
+							<span className="select-none">
+								Load All Chats On Connection
+							</span>
+							<Switcher />
+						</label>
+						<Divider full />
+
+						<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-b-[10px] text-[17px] hover:bg-hover cursor-pointer">
+							<span className="select-none">
+								Provide Default Data in Change
+							</span>
+							<Switcher />
+						</label>
 					</div>
-
-					<button className="w-full min-h-[44px] max-w-2xl px-4 text-red md:text-left bg-darkGray md:rounded-[10px] mx-auto">
-						Delete Access Data
-					</button>
-
-					<button className="w-full min-h-[44px] max-w-2xl px-4 text-red md:text-left bg-darkGray md:rounded-[10px] mx-auto">
-						Log Out
-					</button>
 				</div>
-			</div>
+
+				<div>
+					<div className="px-4 text-sm text-gray mb-[6px]">
+						SYNCHRONIZATION
+					</div>
+					<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-[10px] text-[17px] mb-[9px] hover:bg-hover cursor-pointer">
+						<span className="select-none">
+							Save Settings To Access
+						</span>
+						<Switcher />
+					</label>
+					<div className="px-4 text-sm text-gray">
+						Turn this off if you want to receive notifications only
+						from your active account.
+					</div>
+				</div>
+
+				<button className="w-full min-h-[44px] px-4 text-red md:text-left bg-darkGray md:rounded-[10px] hover:bg-hover">
+					Delete Access Data
+				</button>
+
+				<button className="w-full min-h-[44px] px-4 text-red md:text-left bg-darkGray md:rounded-[10px] hover:bg-hover">
+					Log Out
+				</button>
+			</Scrollable>
 		</>
 	);
 }

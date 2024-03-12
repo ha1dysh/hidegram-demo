@@ -43,13 +43,12 @@ body {
 	font-family: SFPro;
 }
 
-@layer components {
-	.scrollbar-none {
-		overflow-y: scroll;
-		-webkit-overflow-scrolling: touch;
-		overscroll-behavior: contain;
-	}
-	.scrollbar-none::-webkit-scrollbar {
-		display: none;
-	}
+ul {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	overscroll-behavior: contain;
+}
+
+ul::-webkit-scrollbar {
+	display: none;
 }

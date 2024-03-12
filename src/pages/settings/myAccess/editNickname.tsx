@@ -9,7 +9,7 @@ function EditNickname() {
 		<>
 			<Header>
 				<BackBtn />
-				<span>Edit Nickname</span>
+				<span className="text-lg font-semibold">Edit Nickname</span>
 				<EditBtn />
 			</Header>
 
@@ -17,13 +17,13 @@ function EditNickname() {
 				<Input
 					type="text"
 					placeholder="Password"
-					className="h-[50px] md:rounded-[10px]"
+					className="md:rounded-[10px]"
 				/>
-				<Divider />
+				<Divider full />
 				<Input
 					type="text"
 					placeholder="Change Nickname"
-					className="h-[50px] md:rounded-[10px]"
+					className="md:rounded-[10px]"
 				/>
 			</div>
 		</>

@@ -1,15 +1,16 @@
 import { NavLink, Outlet } from "react-router-dom";
+import SidebarWrapper from "@/components/sidebarWrapper";
 import ContentWrapper from "@/components/contentWrapper";
 import Header from "@/components/header";
 import Menu from "@/components/menu/menu";
-import SidebarWrapper from "@/components/sidebarWrapper";
+import Scrollable from "@/components/scrollable";
 import Divider from "@/components/ui/divider";
 
 function Settings() {
 	return (
 		<>
 			<SidebarWrapper>
-				<Header className="h-[70px] md:pl-[32px] bg-black border-none">
+				<Header className="md:pl-[32px] bg-black border-none">
 					<span className="font-bold text-[34px] select-none">
 						Settings
 					</span>
@@ -20,12 +21,12 @@ function Settings() {
 					/>
 				</Header>
 
-				<div className="h-[calc(100%-140px)] md:h-[calc(100%-120px)] md:px-4 flex flex-col gap-[35px] scrollbar-none">
+				<Scrollable className="h-[calc(100%-130px)] md:h-[calc(100%-110px)] pb-[35px] md:px-4 gap-[35px]">
 					<NavLink to="/settings/my-access">
 						<p className="mb-[6px] pl-4 text-gray text-sm">
 							MY ACCESS
 						</p>
-						<div className="relative p-[14px] bg-darkGray md:rounded-[10px] hover:bg-[#111] cursor-pointer">
+						<div className="relative p-[14px] bg-darkGray md:rounded-[10px] hover:bg-hover cursor-pointer">
 							<p className="text-[19px] font-medium">Morpheus</p>
 							<p className="text-[15px] text-gray">
 								ID:21304995678
@@ -41,7 +42,7 @@ function Settings() {
 					<div className="bg-darkGray md:rounded-[10px]">
 						<NavLink
 							to="/settings/language"
-							className="relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-[#111] cursor-pointer"
+							className="relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">Language</p>
 							<p className="text-[15px] text-gray mr-4">
@@ -57,7 +58,7 @@ function Settings() {
 
 						<NavLink
 							to="/settings/database"
-							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-[#111] cursor-pointer"
+							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">Database</p>
 							<img
@@ -70,7 +71,7 @@ function Settings() {
 
 						<NavLink
 							to="/settings/notifications"
-							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-[#111] md:rounded-b-[10px] cursor-pointer"
+							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">
 								Notifications
@@ -87,7 +88,7 @@ function Settings() {
 					<div className="bg-darkGray md:rounded-[10px]">
 						<NavLink
 							to="/settings/feedback"
-							className="relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-[#111] cursor-pointer"
+							className="relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">Feedback</p>
 							<img
@@ -100,7 +101,7 @@ function Settings() {
 
 						<NavLink
 							to="/settings/about"
-							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-[#111] cursor-pointer"
+							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">About</p>
 							<img
@@ -113,7 +114,7 @@ function Settings() {
 
 						<NavLink
 							to="/settings/privacy-policy"
-							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-[#111] cursor-pointer"
+							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">
 								Privacy Policy
@@ -128,7 +129,7 @@ function Settings() {
 
 						<NavLink
 							to="/settings/bug-report"
-							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-[#111] md:rounded-b-[10px] cursor-pointer"
+							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">
 								Bug Report
@@ -140,7 +141,8 @@ function Settings() {
 							/>
 						</NavLink>
 					</div>
-				</div>
+				</Scrollable>
+
 				<Menu />
 			</SidebarWrapper>
 

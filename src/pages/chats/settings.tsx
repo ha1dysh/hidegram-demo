@@ -5,11 +5,12 @@ import EditButton from "@/components/editBtn";
 import Input from "@/components/ui/input";
 import Divider from "@/components/ui/divider";
 import Switcher from "@/components/ui/switcher";
+import Scrollable from "@/components/scrollable";
 
 function ChatSettings() {
 	return (
-		<div className="h-full">
-			<Header className="h-[60px] mb-[35px]">
+		<>
+			<Header>
 				<BackBtn />
 
 				<div
@@ -27,7 +28,7 @@ function ChatSettings() {
 				<EditButton />
 			</Header>
 
-			<div className="h-[calc(100%-110px)] max-w-2xl mx-auto flex flex-col gap-[35px] scrollbar-none">
+			<Scrollable className="py-[35px] max-w-2xl mx-auto gap-[35px]">
 				<div>
 					<div className="mb-[6px] ml-[16px] text-gray">
 						CONTACT DATA
@@ -35,17 +36,14 @@ function ChatSettings() {
 					<div className="bg-darkGray rounded-[10px]">
 						<Input
 							defaultValue="Chat Name"
-							className="h-[50px] text-gray md:rounded-[10px]"
+							className="text-gray md:rounded-[10px]"
 						/>
 						<Divider full />
-						<Input
-							defaultValue="1234567"
-							className="h-[50px] text-gray"
-						/>
+						<Input defaultValue="1234567" className="text-gray" />
 						<Divider full />
 						<Input
 							defaultValue="Onxiros"
-							className="h-[50px] text-gray md:rounded-[10px]"
+							className="text-gray md:rounded-[10px]"
 						/>
 					</div>
 				</div>
@@ -58,7 +56,7 @@ function ChatSettings() {
 						<Input
 							type="password"
 							defaultValue="Chat Name"
-							className="h-[50px] text-gray md:rounded-[10px]"
+							className="text-gray md:rounded-[10px]"
 						/>
 						<img
 							src="/show-password.svg"
@@ -76,7 +74,7 @@ function ChatSettings() {
 					<div className="px-4 text-sm text-gray mb-[6px]">
 						SEARCH TYPE
 					</div>
-					<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-[10px] text-[17px] mb-[9px] hover:bg-[#111] cursor-pointer">
+					<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-[10px] text-[17px] mb-[9px] hover:bg-hover cursor-pointer">
 						<span>I Saved My Password</span>
 						<Switcher />
 					</label>
@@ -93,8 +91,8 @@ function ChatSettings() {
 				<button className="w-full min-h-[44px] max-w-2xl px-4 text-red md:text-left bg-darkGray md:rounded-[10px] mx-auto">
 					Delete Chat
 				</button>
-			</div>
-		</div>
+			</Scrollable>
+		</>
 	);
 }
 

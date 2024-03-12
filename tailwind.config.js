@@ -13,7 +13,6 @@ export default {
 			gray: "#8e8e93",
 			borderColor: "#232323",
 			darkGray: "#1b1b1b",
-			grayIcons: "#676E75",
 			hover: "#111",
 		},
 		extend: {},

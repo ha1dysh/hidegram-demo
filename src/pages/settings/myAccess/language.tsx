@@ -1,7 +1,22 @@
+import Header from "@/components/header";
 import BackBtn from "@/components/backBtn";
 import EditBtn from "@/components/editBtn";
-import Header from "@/components/header";
+import Scrollable from "@/components/scrollable";
 import Divider from "@/components/ui/divider";
+
+const languages = [
+	{ title: "English", description: "English" },
+	{ title: "Arabic", description: "العربية" },
+	{ title: "Catalan", description: "Català" },
+	{ title: "Dutch", description: "Nederlands" },
+	{ title: "French", description: "Français" },
+	{ title: "German", description: "Deutsch" },
+	{ title: "Indonesian", description: "Bahasa Indonesia" },
+	{ title: "Italian", description: "Italiano" },
+	{ title: "Korean", description: "한국어" },
+	{ title: "Malay", description: "Bahasa Melayu" },
+	{ title: "Persian", description: "فارسی" },
+];
 
 function Language() {
 	return (
@@ -11,146 +26,35 @@ function Language() {
 				<span className="text-lg font-semibold">Language</span>
 				<EditBtn className="invisible" />
 			</Header>
-			<div className="max-w-2xl mx-auto pt-[35px] h-[calc(100%-60px)] md:h-[calc(100%-50px)] scrollbar-none">
-				<form className="flex flex-col bg-darkGray md:rounded-[10px]">
-					<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer hover:bg-[#111]">
-						<div className="flex flex-col">
-							<span className="text-[17px]">English</span>
-							<span className="text-[13px]">English</span>
-						</div>
-						<input
-							type="radio"
-							name="language"
-							className="invisible checked:visible"
-							defaultChecked
-						/>
-					</label>
-					<Divider full />
-					<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer hover:bg-[#111]">
-						<div className="flex flex-col">
-							<span className="text-[17px]">Arabic</span>
-							<span className="text-[13px]">العربية</span>
-						</div>
-						<input
-							type="radio"
-							name="language"
-							className="invisible checked:visible"
-						/>
-					</label>
-					<Divider full />
-					<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer hover:bg-[#111]">
-						<div className="flex flex-col">
-							<span className="text-[17px]">Catalan</span>
-							<span className="text-[13px]">Català</span>
-						</div>
-						<input
-							type="radio"
-							name="language"
-							className="invisible checked:visible"
-						/>
-					</label>
-					<Divider full />
-					<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer hover:bg-[#111]">
-						<div className="flex flex-col">
-							<span className="text-[17px]">Dutch</span>
-							<span className="text-[13px]">Nederlands</span>
-						</div>
-						<input
-							type="radio"
-							name="language"
-							className="invisible checked:visible"
-						/>
-					</label>
-					<Divider full />
-					<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer hover:bg-[#111]">
-						<div className="flex flex-col">
-							<span className="text-[17px]">French</span>
-							<span className="text-[13px]">Français</span>
-						</div>
-						<input
-							type="radio"
-							name="language"
-							className="invisible checked:visible"
-						/>
-					</label>
-					<Divider full />
-					<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer hover:bg-[#111]">
-						<div className="flex flex-col">
-							<span className="text-[17px]">German</span>
-							<span className="text-[13px]">Deutsch</span>
-						</div>
-						<input
-							type="radio"
-							name="language"
-							className="invisible checked:visible"
-						/>
-					</label>
-					<Divider full />
-					<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer hover:bg-[#111]">
-						<div className="flex flex-col">
-							<span className="text-[17px]">Indonesian</span>
-							<span className="text-[13px]">
-								Bahasa Indonesia
-							</span>
-						</div>
-						<input
-							type="radio"
-							name="language"
-							className="invisible checked:visible"
-						/>
-					</label>
-					<Divider full />
-					<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer hover:bg-[#111]">
-						<div className="flex flex-col">
-							<span className="text-[17px]">Italian</span>
-							<span className="text-[13px]">Italiano</span>
-						</div>
-						<input
-							type="radio"
-							name="language"
-							className="invisible checked:visible"
-						/>
-					</label>
-					<Divider full />
-					<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer hover:bg-[#111]">
-						<div className="flex flex-col">
-							<span className="text-[17px]">Korean</span>
-							<span className="text-[13px]">한국어</span>
-						</div>
-						<input
-							type="radio"
-							name="language"
-							className="invisible checked:visible"
-						/>
-					</label>
-					<Divider full />
-					<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer hover:bg-[#111]">
-						<div className="flex flex-col">
-							<span className="text-[17px]">Malay</span>
-							<span className="text-[13px]">Bahasa Melayu</span>
-						</div>
-						<input
-							type="radio"
-							name="language"
-							className="invisible checked:visible"
-						/>
-					</label>
-					<Divider full />
-					<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer hover:bg-[#111]">
-						<div className="flex flex-col">
-							<span className="text-[17px]">Persian</span>
-							<span className="text-[13px]">فارسی</span>
-						</div>
-						<input
-							type="radio"
-							name="language"
-							className="invisible checked:visible"
-						/>
-					</label>
-				</form>
-			</div>
+
+			<Scrollable className="max-w-2xl mx-auto py-[35px]">
+				<div className="bg-darkGray md:rounded-[10px]">
+					{languages.map((lang) => (
+						<LangItem key={lang.title} {...lang} />
+					))}
+				</div>
+			</Scrollable>
 		</>
 	);
 }
-
 export default Language;
+
+function LangItem(props: (typeof languages)[0]) {
+	return (
+		<>
+			<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer hover:bg-hover">
+				<div className="flex flex-col">
+					<span className="text-[17px]">{props.title}</span>
+					<span className="text-[13px]">{props.description}</span>
+				</div>
+				<input
+					type="radio"
+					name="language"
+					className="invisible checked:visible"
+					defaultChecked={props.title === "English"}
+				/>
+			</label>
+			<Divider full />
+		</>
+	);
+}

@@ -6,13 +6,14 @@ import ContentWrapper from "@/components/contentWrapper";
 import Menu from "@/components/menu/menu";
 import Input from "@/components/ui/input";
 import Divider from "@/components/ui/divider";
+import Header from "@/components/header";
+import EditBtn from "@/components/editBtn";
 
 import SearchIcon from "/search-icon.svg";
 import NewChatIcon from "/newChat.svg";
 
 import { fakeChats } from "./fakeData";
-import Header from "@/components/header";
-import EditBtn from "@/components/editBtn";
+import Scrollable from "@/components/scrollable";
 
 function Chats() {
 	const active = useLocation().pathname;
@@ -20,7 +21,7 @@ function Chats() {
 	return (
 		<>
 			<SidebarWrapper>
-				<Header className="h-[70px] gap-4">
+				<Header className="h-[60px] md:h-[70px] gap-4 border-none">
 					<EditBtn className="md:hidden" />
 
 					<div className="relative hidden w-full md:block">
@@ -45,7 +46,7 @@ function Chats() {
 					</NavLink>
 				</Header>
 
-				<ul className="h-[calc(100%-140px)] md:h-[calc(100%-120px)] scrollbar-none">
+				<Scrollable className="h-[calc(100%-130px)] md:h-[calc(100%-120px)]">
 					{fakeChats.map((chat) => {
 						return (
 							<div key={chat.id}>
@@ -77,7 +78,7 @@ function Chats() {
 							</div>
 						);
 					})}
-				</ul>
+				</Scrollable>
 
 				<Menu />
 			</SidebarWrapper>

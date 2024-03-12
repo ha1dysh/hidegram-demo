@@ -1,7 +1,8 @@
+import Header from "@/components/header";
 import BackBtn from "@/components/backBtn";
 import EditBtn from "@/components/editBtn";
-import Header from "@/components/header";
 import Input from "@/components/ui/input";
+import Scrollable from "@/components/scrollable";
 
 function EditPassword() {
 	return (
@@ -12,16 +13,16 @@ function EditPassword() {
 				<EditBtn />
 			</Header>
 
-			<div className="max-w-2xl mx-auto pt-[35px] h-[calc(100%-60px)] md:h-[calc(100%-50px)] scrollbar-none flex flex-col gap-[35px]">
+			<Scrollable className="max-w-2xl mx-auto py-[35px] gap-[35px]">
 				<div>
-					<div className="mb-[6px] ml-[16px] text-gray">
+					<p className="mb-[6px] ml-[16px] text-gray">
 						ENTER YOUR OLD PASSWORD
-					</div>
+					</p>
 					<div className="bg-darkGray flex md:rounded-[10px]">
 						<Input
 							type="password"
 							placeholder="Text"
-							className="h-[50px] text-gray md:rounded-[10px]"
+							className="md:rounded-[10px]"
 						/>
 						<img
 							src="/show-password.svg"
@@ -29,21 +30,21 @@ function EditPassword() {
 							className="mr-4 cursor-pointer"
 						/>
 					</div>
-					<div className="px-4 text-sm text-gray mt-[9px]">
+					<p className="px-4 text-sm text-gray mt-[9px]">
 						Turn this off if you want to receive notifications only
 						from your active account.
-					</div>
+					</p>
 				</div>
 
 				<div>
-					<div className="mb-[6px] ml-[16px] text-gray">
+					<p className="mb-[6px] ml-[16px] text-gray">
 						ENTER YOUR NEW PASSWORD
-					</div>
+					</p>
 					<div className="bg-darkGray flex md:rounded-[10px]">
 						<Input
 							type="password"
 							placeholder="Text Field"
-							className="h-[50px] text-gray md:rounded-[10px]"
+							className="md:rounded-[10px]"
 						/>
 						<img
 							src="/show-password.svg"
@@ -51,21 +52,21 @@ function EditPassword() {
 							className="mr-4 cursor-pointer"
 						/>
 					</div>
-					<div className="px-4 text-sm text-gray mt-[9px]">
+					<p className="px-4 text-sm text-gray mt-[9px]">
 						Turn this off if you want to receive notifications only
 						from your active account.
-					</div>
+					</p>
 				</div>
 
 				<div>
-					<div className="mb-[6px] ml-[16px] text-gray">
+					<p className="mb-[6px] ml-[16px] text-gray">
 						CONFIRM PASSWORD
-					</div>
+					</p>
 					<div className="bg-darkGray flex md:rounded-[10px]">
 						<Input
 							type="password"
 							placeholder="Text Field"
-							className="h-[50px] text-gray md:rounded-[10px]"
+							className="md:rounded-[10px]"
 						/>
 						<img
 							src="/show-password.svg"
@@ -73,16 +74,16 @@ function EditPassword() {
 							className="mr-4 cursor-pointer"
 						/>
 					</div>
-					<div className="px-4 text-sm text-gray mt-[9px]">
+					<p className="px-4 text-sm text-gray mt-[9px]">
 						Turn this off if you want to receive notifications only
 						from your active account.
-					</div>
+					</p>
 				</div>
 
-				<button className="w-full min-h-[44px] max-w-2xl px-4 text-blue md:text-left bg-darkGray md:rounded-[10px] mx-auto">
+				<button className="w-full min-h-[44px] px-4 text-blue md:text-left bg-darkGray md:rounded-[10px]">
 					APPLY
 				</button>
-			</div>
+			</Scrollable>
 		</>
 	);
 }

@@ -6,12 +6,13 @@ import Header from "@/components/header";
 import Input from "@/components/ui/input";
 
 import { fakeMessages } from "./fakeData";
+import Scrollable from "@/components/scrollable";
 
 function Messages() {
 	return (
 		<>
 			<NavLink to="/chats/chat-settings">
-				<Header className="h-[60px]">
+				<Header>
 					<BackBtn className="md:hidden" />
 
 					<div className={twMerge("text-center md:text-left")}>
@@ -27,7 +28,7 @@ function Messages() {
 				</Header>
 			</NavLink>
 
-			<ul className="h-[calc(100%-110px)] scrollbar-none flex flex-col-reverse gap-2 p-4">
+			<Scrollable className="h-[calc(100%-110px)] p-4 flex-col-reverse gap-2">
 				{fakeMessages.map((message) => {
 					const bob = !(message.sender.name === "Bob");
 
@@ -55,7 +56,7 @@ function Messages() {
 						</li>
 					);
 				})}
-			</ul>
+			</Scrollable>
 
 			<form className="sticky bottom-0 flex items-center h-[50px] border-t border-borderColor bg-darkGray md:bg-black">
 				<label className="flex w-12 p-2 place-content-center">
