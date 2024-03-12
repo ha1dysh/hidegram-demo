@@ -12,7 +12,7 @@ function MyAccess() {
 			<Header className="justify-between">
 				<BackBtn />
 				<span className="text-lg font-semibold">Access</span>
-				<EditBtn />
+				<EditBtn className="invisible" />
 			</Header>
 
 			<Scrollable className="max-w-2xl mx-auto py-[35px] gap-[35px]">

@@ -50,8 +50,10 @@ function LangItem(props: (typeof languages)[0]) {
 				<input
 					type="radio"
 					name="language"
-					className="invisible checked:visible"
 					defaultChecked={props.title === "English"}
+					value={props.title.toLowerCase()}
+					onChange={() => {}}
+					className="invisible checked:visible"
 				/>
 			</label>
 			<Divider full />

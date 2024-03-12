@@ -18,7 +18,15 @@ import Settings from "./pages/settings/settings.tsx";
 import MyAccess from "./pages/settings/myAccess/myAccess.tsx";
 import EditNickname from "./pages/settings/myAccess/editNickname.tsx";
 import EditPassword from "./pages/settings/myAccess/editPassword.tsx";
-import Language from "./pages/settings/myAccess/language.tsx";
+import Language from "./pages/settings/language.tsx";
+import Database from "./pages/settings/database/database.tsx";
+import Product from "./pages/settings/database/product.tsx";
+import Order from "./pages/settings/database/order.tsx";
+import Number from "./pages/settings/database/number.tsx";
+import Search from "./pages/settings/database/search.tsx";
+import Notifications from "./pages/settings/notifications.tsx";
+import Feedback from "./pages/settings/feedback.tsx";
+import BugReport from "./pages/settings/bugReport.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -44,11 +52,15 @@ const router = createBrowserRouter([
 					{ path: "my-access", element: <MyAccess /> },
 					{ path: "edit-nickname", element: <EditNickname /> },
 					{ path: "edit-password", element: <EditPassword /> },
-					{
-						path: "edit-default-nickname",
-						element: <EditNickname />,
-					},
 					{ path: "language", element: <Language /> },
+					{ path: "database", element: <Database /> },
+					{ path: "db-product", element: <Product /> },
+					{ path: "db-order", element: <Order /> },
+					{ path: "db-number", element: <Number /> },
+					{ path: "db-search", element: <Search /> },
+					{ path: "notifications", element: <Notifications /> },
+					{ path: "feedback", element: <Feedback /> },
+					{ path: "bug-report", element: <BugReport /> },
 				],
 			},
 		],

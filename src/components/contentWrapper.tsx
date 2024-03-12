@@ -13,6 +13,13 @@ function ContentWrapper({ children }: { children: React.ReactNode }) {
 		"edit-nickname",
 		"edit-password",
 		"language",
+		"database",
+		"db-product",
+		"db-order",
+		"db-number",
+		"db-search",
+		"notifications",
+		"feedback",
 	].some((s) => location.includes(s));
 
 	return (
