@@ -30,7 +30,7 @@ function SearchItem() {
 		<>
 			<li className="grid grid-cols-2 px-4 bg-darkGray h-[60px] content-center cursor-pointer hover:bg-hover first:rounded-t-[10px] last-of-type:rounded-b-[10px]">
 				<div className="text-[17px]">
-					ID: {String(Math.random()).slice(2)}
+					ID: {String(Math.random()).slice(5)}
 				</div>
 				<div className="justify-self-end text-[13px] text-gray">
 					3.01.2024, 3:44 pm
