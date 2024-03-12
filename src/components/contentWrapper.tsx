@@ -20,6 +20,7 @@ function ContentWrapper({ children }: { children: React.ReactNode }) {
 		"db-search",
 		"notifications",
 		"feedback",
+		"bug-report",
 	].some((s) => location.includes(s));
 
 	return (
