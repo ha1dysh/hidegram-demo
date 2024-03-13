@@ -3,6 +3,7 @@ import Layout from "./pages/layout.tsx";
 import NotFound from "./pages/notFound.tsx";
 
 import Access from "./pages/access/access.tsx";
+
 import Change from "./pages/change/change.tsx";
 
 import Chats from "./pages/chats/chats.tsx";
@@ -24,14 +25,17 @@ import Notifications from "./pages/settings/notifications.tsx";
 import Feedback from "./pages/settings/feedback.tsx";
 import BugReport from "./pages/settings/bugReport.tsx";
 
-const router = createBrowserRouter([
+export const routes = [
 	{
 		path: "/",
 		element: <Layout />,
 		errorElement: <NotFound />,
 		children: [
-			{ path: "/access", element: <Access /> },
-			{ path: "/change", element: <Change /> },
+			{ path: "/access", element: <Access />, children: [] },
+			{
+				path: "/change",
+				element: <Change />,
+			},
 			{
 				path: "/chats",
 				element: <Chats />,
@@ -61,6 +65,6 @@ const router = createBrowserRouter([
 			},
 		],
 	},
-]);
-
+];
+const router = createBrowserRouter(routes);
 export default router;

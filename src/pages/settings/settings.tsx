@@ -1,15 +1,12 @@
-import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import SidebarWrapper from "@/components/sidebarWrapper";
 import ContentWrapper from "@/components/contentWrapper";
 import Header from "@/components/header";
 import Menu from "@/components/menu/menu";
 import Scrollable from "@/components/scrollable";
 import Divider from "@/components/ui/divider";
-import { twMerge } from "tailwind-merge";
 
 function Settings() {
-	const active = useLocation().pathname;
-
 	return (
 		<>
 			<SidebarWrapper>
@@ -30,10 +27,9 @@ function Settings() {
 							MY ACCESS
 						</p>
 						<div
-							className={twMerge(
-								"relative p-[14px] bg-darkGray md:rounded-[10px] hover:bg-hover cursor-pointer",
-								active.includes("access") && "bg-hover"
-							)}
+							className={
+								"relative p-[14px] bg-darkGray md:rounded-[10px] hover:bg-hover cursor-pointer"
+							}
 						>
 							<p className="text-[19px] font-medium">Morpheus</p>
 							<p className="text-[15px] text-gray">
@@ -50,10 +46,7 @@ function Settings() {
 					<div className="bg-darkGray md:rounded-[10px]">
 						<NavLink
 							to="/settings/language"
-							className={twMerge(
-								"relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer",
-								active.includes("language") && "bg-hover"
-							)}
+							className="relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">Language</p>
 							<p className="text-[15px] text-gray mr-4">
@@ -69,10 +62,7 @@ function Settings() {
 
 						<NavLink
 							to="/settings/database"
-							className={twMerge(
-								"relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover cursor-pointer",
-								active.includes("database") && "bg-hover"
-							)}
+							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">Database</p>
 							<img
@@ -85,10 +75,7 @@ function Settings() {
 
 						<NavLink
 							to="/settings/notifications"
-							className={twMerge(
-								"relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer",
-								active.includes("notifications") && "bg-hover"
-							)}
+							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">
 								Notifications
@@ -107,10 +94,7 @@ function Settings() {
 					<div className="bg-darkGray md:rounded-[10px]">
 						<NavLink
 							to="/settings/feedback"
-							className={twMerge(
-								"relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer",
-								active.includes("feedback") && "bg-hover"
-							)}
+							className="relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">Feedback</p>
 							<img
@@ -151,10 +135,7 @@ function Settings() {
 
 						<NavLink
 							to="/settings/bug-report"
-							className={twMerge(
-								"relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer",
-								active.includes("bug-report") && "bg-hover"
-							)}
+							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">
 								Bug Report
