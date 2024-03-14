@@ -35,7 +35,7 @@ function Database() {
 						>
 							<p className="text-[17px] font-medium">Product</p>
 							<div className="flex gap-4">
-								<p className="text-[15px] text-gray">Chat</p>
+								<p className="text-[17px] text-gray">Chat</p>
 								<img
 									src="/arrow-right.svg"
 									alt="arrow left icon"
@@ -95,7 +95,7 @@ function Database() {
 
 				<NavLink
 					to="/settings/db-search"
-					className="w-full min-h-[44px] flex items-center mt-[35px] px-4 text-blue md:text-left bg-darkGray md:rounded-[10px] mx-auto"
+					className="w-full min-h-[44px] flex items-center px-4 text-blue justify-center md:justify-start bg-darkGray md:rounded-[10px] mx-auto"
 				>
 					Search
 				</NavLink>

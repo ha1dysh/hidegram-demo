@@ -28,7 +28,7 @@ function Messages() {
 				</Header>
 			</NavLink>
 
-			<Scrollable className="h-[calc(100%-110px)] p-4 flex-col-reverse gap-2">
+			<Scrollable className="h-[calc(100%-104px)] md:h-[calc(100%-110px)] p-4 flex-col-reverse gap-2">
 				{fakeMessages.map((message) => {
 					const bob = !(message.sender.name === "Bob");
 

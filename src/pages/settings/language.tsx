@@ -3,6 +3,7 @@ import BackBtn from "@/components/backBtn";
 import EditBtn from "@/components/editBtn";
 import Scrollable from "@/components/scrollable";
 import Divider from "@/components/ui/divider";
+import Input from "@/components/ui/input";
 
 const languages = [
 	{ title: "English", description: "English" },
@@ -28,7 +29,19 @@ function Language() {
 			</Header>
 
 			<Scrollable className="max-w-2xl mx-auto py-[35px]">
-				<div className="bg-darkGray md:rounded-[10px]">
+				<div className="relative w-full px-4 mb-2 md:hidden">
+					<Input
+						placeholder="Search"
+						className="h-9 pl-9 rounded-[10px]"
+					/>
+					<img
+						src="/search-icon.svg"
+						alt="search icon"
+						className="absolute left-[26px] top-[9px]"
+					/>
+				</div>
+
+				<div className="md:bg-darkGray md:rounded-[10px]">
 					{languages.map((lang) => (
 						<LangItem key={lang.title} {...lang} />
 					))}
@@ -42,7 +55,7 @@ export default Language;
 function LangItem(props: (typeof languages)[0]) {
 	return (
 		<>
-			<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer hover:bg-hover">
+			<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer">
 				<div className="flex flex-col">
 					<span className="text-[17px]">{props.title}</span>
 					<span className="text-[13px]">{props.description}</span>
@@ -56,7 +69,7 @@ function LangItem(props: (typeof languages)[0]) {
 					className="invisible checked:visible"
 				/>
 			</label>
-			<Divider full />
+			<Divider full className="last:hidden" />
 		</>
 	);
 }

@@ -13,17 +13,17 @@ function EditNickname() {
 				<EditBtn />
 			</Header>
 
-			<div className="max-w-2xl mx-auto mt-[35px] bg-darkGray md:rounded-[10px]">
+			<div className="max-w-2xl mx-auto mt-[35px] md:bg-darkGray md:rounded-[10px]">
 				<Input
 					type="text"
 					placeholder="Password"
-					className="md:rounded-[10px]"
+					className="md:rounded-[10px] bg-black md:bg-darkGray"
 				/>
 				<Divider full />
 				<Input
 					type="text"
 					placeholder="Change Nickname"
-					className="md:rounded-[10px]"
+					className="md:rounded-[10px] bg-black md:bg-darkGray"
 				/>
 			</div>
 		</>

@@ -10,7 +10,7 @@ function Header({ children, className, ...props }: Props) {
 	return (
 		<header
 			className={twMerge(
-				"h-[60px] flex justify-between items-center",
+				"h-[54px] md:h-[60px] flex justify-between items-center",
 				isMobile
 					? "px-[14px] bg-darkGray"
 					: "px-4 bg-black border-b border-borderColor",

@@ -11,7 +11,7 @@ function BackBtn({ className, ...props }: Props) {
 	return (
 		<button
 			className={twMerge(
-				"flex items-center gap-2 text-[17px] text-blue",
+				"w-[60px] flex items-center gap-2 text-[17px] text-blue",
 				className
 			)}
 			onClick={() => navigate(-1)}

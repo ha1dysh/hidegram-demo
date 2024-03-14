@@ -9,7 +9,10 @@ function Scrollable({ children, className, ...props }: Props) {
 	return (
 		<ul
 			{...props}
-			className={twMerge("h-[calc(100%-60px)] flex flex-col", className)}
+			className={twMerge(
+				"h-[calc(100%-54px)] md:h-[calc(100%-60px)] flex flex-col",
+				className
+			)}
 		>
 			{children}
 		</ul>

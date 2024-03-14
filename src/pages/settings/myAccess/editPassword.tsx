@@ -15,7 +15,7 @@ function EditPassword() {
 
 			<Scrollable className="max-w-2xl mx-auto py-[35px] gap-[35px]">
 				<div>
-					<p className="mb-[6px] ml-[16px] text-gray">
+					<p className="mb-[6px] ml-[16px] text-gray text-sm">
 						ENTER YOUR OLD PASSWORD
 					</p>
 					<div className="bg-darkGray flex md:rounded-[10px]">
@@ -37,7 +37,7 @@ function EditPassword() {
 				</div>
 
 				<div>
-					<p className="mb-[6px] ml-[16px] text-gray">
+					<p className="mb-[6px] ml-[16px] text-gray text-sm">
 						ENTER YOUR NEW PASSWORD
 					</p>
 					<div className="bg-darkGray flex md:rounded-[10px]">
@@ -59,7 +59,7 @@ function EditPassword() {
 				</div>
 
 				<div>
-					<p className="mb-[6px] ml-[16px] text-gray">
+					<p className="mb-[6px] ml-[16px] text-gray text-sm">
 						CONFIRM PASSWORD
 					</p>
 					<div className="bg-darkGray flex md:rounded-[10px]">
@@ -80,8 +80,8 @@ function EditPassword() {
 					</p>
 				</div>
 
-				<button className="w-full min-h-[44px] px-4 text-blue md:text-left bg-darkGray md:rounded-[10px]">
-					APPLY
+				<button className="w-full min-h-[44px] px-4 text-blue text-center md:text-left bg-darkGray md:rounded-[10px]">
+					Apply
 				</button>
 			</Scrollable>
 		</>

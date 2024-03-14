@@ -10,18 +10,13 @@ function Settings() {
 	return (
 		<>
 			<SidebarWrapper>
-				<Header className="md:pl-[32px] bg-black border-none">
-					<span className="font-bold text-[34px] select-none">
+				<Header className="h-[72px] md:pl-[32px] items-end bg-black border-none">
+					<span className="font-bold font-SFPro text-[34px] select-none">
 						Settings
 					</span>
-					<img
-						src="/moon.svg"
-						alt="moon icon"
-						className="cursor-pointer"
-					/>
 				</Header>
 
-				<Scrollable className="h-[calc(100%-130px)] md:h-[calc(100%-110px)] pb-[35px] md:px-4 gap-[35px]">
+				<Scrollable className="h-[calc(100%-142px)] md:h-[calc(100%-110px)] pb-[35px] md:px-4 gap-[35px]">
 					<NavLink to="/settings/my-access">
 						<p className="mb-[6px] pl-4 text-gray text-sm">
 							MY ACCESS

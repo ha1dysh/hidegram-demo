@@ -37,11 +37,11 @@ function Chats() {
 						Chats
 					</div>
 
-					<NavLink to="/chats/new-chat">
+					<NavLink to="/chats/new-chat" className="w-[55px]">
 						<img
 							src={NewChatIcon}
 							alt="new chat icon"
-							className="cursor-pointer"
+							className="mx-auto cursor-pointer"
 						/>
 					</NavLink>
 				</Header>
@@ -52,29 +52,34 @@ function Chats() {
 							<div key={chat.id}>
 								<li>
 									<NavLink
-										to={`userId${chat.id}`}
+										to={`user-id-${chat.id}`}
 										className={twMerge(
 											"grid grid-cols-8 grid-rows-2 p-4 cursor-pointer hover:bg-hover",
 											active.includes(
-												`userId${chat.id}`
+												`user-id-${chat.id}`
 											) && "bg-hover"
 										)}
 									>
 										<div className="col-span-6 font-medium">
 											{chat.name}
 										</div>
-										<div className="grid col-span-2 text-right text-gray text-[13px] relative top-[-10px]">
+										<div className="grid col-span-2 text-right text-gray text-[13px] relative top-[-4px]">
 											{chat.date}
 										</div>
 										<div className="col-span-7 line-clamp-1 text-[15px] text-gray">
 											{chat.lastMessage}
 										</div>
-										<div className="flex text-sm rounded-full bg-blue justify-self-end size-5 place-content-center">
+										<div className="relative bottom-[-4px] flex text-sm rounded-full bg-blue justify-self-end size-5 place-content-center">
 											<span>{chat.unreadMessages}</span>
 										</div>
 									</NavLink>
 								</li>
-								<Divider />
+								<Divider
+									className={twMerge(
+										active.includes(`user-id-${chat.id}`) &&
+											"invisible"
+									)}
+								/>
 							</div>
 						);
 					})}
