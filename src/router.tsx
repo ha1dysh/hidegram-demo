@@ -5,6 +5,11 @@ import NotFound from "./pages/notFound.tsx";
 import Access from "./pages/access/access.tsx";
 
 import Change from "./pages/change/change.tsx";
+import ExchangeMethod from "./pages/change/exchangeMethod.tsx";
+import PassSettings from "./pages/change/passSettings.tsx";
+import PassToExchange from "./pages/change/passToExchange.tsx";
+import WaitingTime from "./pages/change/waitingTime.tsx";
+import Exchange from "./pages/change/exchange.tsx";
 
 import Chats from "./pages/chats/chats.tsx";
 import Messages from "./pages/chats/messages.tsx";
@@ -24,6 +29,7 @@ import Search from "./pages/settings/database/search.tsx";
 import Notifications from "./pages/settings/notifications.tsx";
 import Feedback from "./pages/settings/feedback.tsx";
 import BugReport from "./pages/settings/bugReport.tsx";
+import ChatId from "./pages/change/chatId.tsx";
 
 export const routes = [
 	{
@@ -35,12 +41,20 @@ export const routes = [
 			{
 				path: "/change",
 				element: <Change />,
+				children: [
+					{ path: "password-settings", element: <PassSettings /> },
+					{ path: "exchange-method", element: <ExchangeMethod /> },
+					{ path: "password-exchange", element: <PassToExchange /> },
+					{ path: "waiting-time", element: <WaitingTime /> },
+					{ path: "chat-id", element: <ChatId /> },
+					{ path: "exchange", element: <Exchange /> },
+				],
 			},
 			{
 				path: "/chats",
 				element: <Chats />,
 				children: [
-					{ path: ":userId", element: <Messages /> },
+					{ path: ":user-id", element: <Messages /> },
 					{ path: "chat-settings", element: <ChatSettings /> },
 					{ path: "new-chat", element: <NewChat /> },
 				],
