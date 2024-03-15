@@ -14,7 +14,7 @@ function NewChat() {
 				<EditButton />
 			</Header>
 
-			<Scrollable className="py-[35px] gap-[35px]">
+			<Scrollable>
 				<div className="w-full max-w-2xl mx-auto">
 					<div className="px-4 text-sm text-gray mb-[6px]">
 						CHAT HEADER

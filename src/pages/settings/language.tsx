@@ -28,7 +28,7 @@ function Language() {
 				<EditBtn className="invisible" />
 			</Header>
 
-			<Scrollable className="max-w-2xl mx-auto py-[35px]">
+			<Scrollable className="max-w-2xl gap-2 mx-auto">
 				<div className="relative w-full px-4 mb-2 md:hidden">
 					<Input
 						placeholder="Search"

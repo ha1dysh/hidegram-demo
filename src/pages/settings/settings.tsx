@@ -16,7 +16,7 @@ function Settings() {
 					</span>
 				</Header>
 
-				<Scrollable className="h-[calc(100%-142px)] md:h-[calc(100%-110px)] pb-[35px] md:px-4 gap-[35px]">
+				<Scrollable className="h-[calc(100%-142px)] md:h-[calc(100%-110px)] pt-2 md:px-4">
 					<NavLink to="/settings/my-access">
 						<p className="mb-[6px] pl-4 text-gray text-sm">
 							MY ACCESS

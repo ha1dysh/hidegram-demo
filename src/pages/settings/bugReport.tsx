@@ -13,7 +13,7 @@ function BugReport() {
 				<EditBtn className="invisible" />
 			</Header>
 
-			<Scrollable className="max-w-2xl mx-auto py-[35px] gap-[30px]">
+			<Scrollable className="max-w-2xl mx-auto">
 				<div className="text-[14px] text-gray text-center">
 					WARNING: Push Notifications are disabled. To enable visit:
 					<br />

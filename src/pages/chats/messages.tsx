@@ -58,7 +58,7 @@ function Messages() {
 				})}
 			</Scrollable>
 
-			<form className="sticky bottom-0 flex items-center h-[50px] border-t border-borderColor bg-darkGray md:bg-black">
+			<form className="flex items-center h-[50px] border-t border-borderColor bg-darkGray md:bg-black">
 				<label className="flex w-12 p-2 place-content-center">
 					<img src="/icon-plus.svg" alt="add file icon" />
 					<input type="file" className="w-0 h-0 opacity-0" />

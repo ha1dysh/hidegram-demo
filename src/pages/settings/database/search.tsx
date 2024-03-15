@@ -13,7 +13,7 @@ function Search() {
 				<EditBtn className="invisible" />
 			</Header>
 
-			<Scrollable className="max-w-2xl mx-auto py-[35px]">
+			<Scrollable className="max-w-2xl mx-auto">
 				<div className="bg-darkGray md:rounded-[10px]">
 					{Array.from({ length: 25 }, (_, i) => (
 						<SearchItem key={i} />

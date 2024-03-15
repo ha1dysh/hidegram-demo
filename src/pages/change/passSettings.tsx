@@ -14,7 +14,7 @@ function PassSettings() {
 				<EditBtn className="invisible" />
 			</Header>
 
-			<Scrollable className="max-w-2xl mx-auto py-[35px] gap-[35px]">
+			<Scrollable className="max-w-2xl mx-auto">
 				<div>
 					<div className="bg-darkGray md:rounded-[10px]">
 						<label className="px-4 py-[24px] flex justify-between h-[58px] items-center bg-darkGray cursor-pointer hover:bg-hover md:rounded-t-[10px]">

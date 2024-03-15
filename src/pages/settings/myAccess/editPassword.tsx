@@ -13,7 +13,7 @@ function EditPassword() {
 				<EditBtn />
 			</Header>
 
-			<Scrollable className="max-w-2xl mx-auto py-[35px] gap-[35px]">
+			<Scrollable className="max-w-2xl mx-auto">
 				<div>
 					<p className="mb-[6px] ml-[16px] text-gray text-sm">
 						ENTER YOUR OLD PASSWORD

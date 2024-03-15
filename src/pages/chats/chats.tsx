@@ -22,7 +22,7 @@ function Chats() {
 		<>
 			<SidebarWrapper>
 				<Header className="h-[60px] md:h-[70px] gap-4 border-none">
-					<EditBtn className="md:hidden" />
+					<EditBtn className="text-left md:hidden" />
 
 					<div className="relative hidden w-full md:block">
 						<Input className="h-9 pl-9 rounded-[10px]" />
@@ -37,16 +37,16 @@ function Chats() {
 						Chats
 					</div>
 
-					<NavLink to="/chats/new-chat" className="w-[55px]">
+					<NavLink to="/chats/new-chat" className="w-[55px] ">
 						<img
 							src={NewChatIcon}
 							alt="new chat icon"
-							className="mx-auto cursor-pointer"
+							className="ml-auto cursor-pointer"
 						/>
 					</NavLink>
 				</Header>
 
-				<Scrollable className="h-[calc(100%-130px)] md:h-[calc(100%-120px)]">
+				<Scrollable className="h-[calc(100%-130px)] md:h-[calc(100%-120px)] py-0 gap-0">
 					{fakeChats.map((chat) => {
 						return (
 							<div key={chat.id}>
