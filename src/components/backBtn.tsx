@@ -17,7 +17,7 @@ function BackBtn({ className, ...props }: Props) {
 			onClick={() => navigate(-1)}
 			{...props}
 		>
-			<img src="/arrow-left.svg" alt="arrow left icon" className="" />
+			<img src="/arrow-left.svg" alt="arrow left icon" />
 			<span>Back</span>
 		</button>
 	);

@@ -8,7 +8,10 @@ function EditBtn({ className, ...props }: Props) {
 	return (
 		<button
 			{...props}
-			className={twMerge("w-[60px] text-[17px] text-blue", className)}
+			className={twMerge(
+				"w-[60px] text-[17px] text-right text-blue",
+				className
+			)}
 		>
 			Edit
 		</button>

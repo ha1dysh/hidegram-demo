@@ -13,7 +13,7 @@ function ContentWrapper({ children }: { children: React.ReactNode }) {
 		.some((s: string) => location.includes(s));
 
 	return (
-		<div
+		<main
 			className={twMerge(
 				"w-full h-full hidden md:block bg-black",
 				isMobile && "absolute top-0",
@@ -21,7 +21,7 @@ function ContentWrapper({ children }: { children: React.ReactNode }) {
 			)}
 		>
 			{children}
-		</div>
+		</main>
 	);
 }
 

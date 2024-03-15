@@ -5,7 +5,7 @@ import EditButton from "@/components/editBtn";
 import Header from "@/components/header";
 import Input from "@/components/ui/input";
 
-import { fakeMessages } from "./fakeData";
+import { fakeMessages } from "../../../fakeData";
 import Scrollable from "@/components/scrollable";
 
 function Messages() {
@@ -60,7 +60,7 @@ function Messages() {
 
 			<form className="sticky bottom-0 flex items-center h-[50px] border-t border-borderColor bg-darkGray md:bg-black">
 				<label className="flex w-12 p-2 place-content-center">
-					<img src="/addFile.svg" alt="add file" />
+					<img src="/icon-plus.svg" alt="add file icon" />
 					<input type="file" className="w-0 h-0 opacity-0" />
 				</label>
 

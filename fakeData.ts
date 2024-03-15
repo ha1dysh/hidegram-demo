@@ -211,3 +211,15 @@ export const fakeMessages = [
 		isRead: true,
 	},
 ].reverse();
+
+export const myData = [
+	{ title: "J Black", id: String(Math.random()).slice(8) },
+	{ title: "Wife 2", id: String(Math.random()).slice(8) },
+	{ title: "Note 12", id: String(Math.random()).slice(8) },
+	{ title: "Margus", id: String(Math.random()).slice(8) },
+	{ title: "Ketamin pro", id: String(Math.random()).slice(8) },
+	{ title: "Wife", id: String(Math.random()).slice(8) },
+	{ title: "Kitten", id: String(Math.random()).slice(8) },
+	{ title: "Warum nicht", id: String(Math.random()).slice(8) },
+	{ title: "Wife 2", id: String(Math.random()).slice(8) },
+];

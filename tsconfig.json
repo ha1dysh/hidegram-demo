@@ -24,6 +24,6 @@
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true
 	},
-	"include": ["src"],
+	"include": ["src", "fakeData.ts"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -3,6 +3,8 @@ import * as Switch from "@radix-ui/react-switch";
 function Switcher() {
 	return (
 		<Switch.Root
+			// checked={checked}
+			// onCheckedChange={() => setChecked((s) => !s)}
 			className="w-[51px] h-[31px] bg-gray rounded-full relative data-[state=checked]:bg-blue outline-none"
 			style={{ WebkitTapHighlightColor: "rgba(0, 0, 0, 0)" }}
 		>

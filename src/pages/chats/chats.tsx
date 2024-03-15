@@ -10,9 +10,9 @@ import Header from "@/components/header";
 import EditBtn from "@/components/editBtn";
 
 import SearchIcon from "/search-icon.svg";
-import NewChatIcon from "/newChat.svg";
+import NewChatIcon from "/icon-new-chat.svg";
 
-import { fakeChats } from "./fakeData";
+import { fakeChats } from "../../../fakeData";
 import Scrollable from "@/components/scrollable";
 
 function Chats() {

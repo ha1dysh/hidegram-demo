@@ -169,7 +169,7 @@ function Change() {
 				)}
 
 				{!isSend && (
-					<Scrollable className="h-[calc(100%-130px)] md:h-[calc(100%-110px)] py-[35px] md:px-4 gap-[35px]">
+					<Scrollable className="h-[calc(100%-124px)] md:h-[calc(100%-110px)] py-[35px] md:px-4 gap-[35px]">
 						<div>
 							<div className="mb-[6px] ml-[16px] text-gray">
 								EXCHANGE CODE
