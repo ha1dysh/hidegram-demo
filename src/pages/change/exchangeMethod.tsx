@@ -7,7 +7,7 @@ function ExchangeMethod() {
 	return (
 		<>
 			<Header>
-				<BackBtn />
+				<BackBtn to=".." />
 				<span className="text-lg font-semibold">Exchange Method</span>
 				<EditBtn className="invisible" />
 			</Header>
@@ -22,7 +22,12 @@ function ExchangeMethod() {
 							value="chat"
 							defaultChecked
 							onChange={() => {}}
-							className="invisible checked:visible"
+							className="hidden peer"
+						/>
+						<img
+							src="/icon-checkmark.svg"
+							alt="check mark icon"
+							className="hidden peer-checked:block"
 						/>
 					</label>
 					<Divider full />
@@ -34,7 +39,12 @@ function ExchangeMethod() {
 							name="language"
 							value="access"
 							onChange={() => {}}
-							className="invisible checked:visible"
+							className="hidden peer"
+						/>
+						<img
+							src="/icon-checkmark.svg"
+							alt="check mark icon"
+							className="hidden peer-checked:block"
 						/>
 					</label>
 				</div>

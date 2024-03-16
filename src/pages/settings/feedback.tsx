@@ -8,7 +8,7 @@ function Feedback() {
 	return (
 		<>
 			<Header>
-				<BackBtn />
+				<BackBtn to=".." />
 				<span className="text-lg font-semibold">Feedback</span>
 				<EditBtn className="invisible" />
 			</Header>
@@ -56,7 +56,7 @@ function Feedback() {
 					</div>
 					<textarea
 						placeholder="Write Your Feedback"
-						className="w-full h-[200px] md:h-[400px] bg-darkGray p-4 md:rounded-[10px] text-[17px] outline-none resize-none"
+						className="w-full h-[200px] md:h-[400px] bg-darkGray p-4 md:rounded-[10px] text-[17px] outline-none resize-none placeholder:text-gray"
 					/>
 				</div>
 				<button className="w-full min-h-[44px] px-4 text-blue md:text-left bg-darkGray md:rounded-[10px] mx-auto hover:bg-hover">

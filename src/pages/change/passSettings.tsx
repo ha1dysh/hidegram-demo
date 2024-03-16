@@ -9,7 +9,7 @@ function PassSettings() {
 	return (
 		<>
 			<Header>
-				<BackBtn />
+				<BackBtn to=".." />
 				<span className="text-lg font-semibold">Password Settings</span>
 				<EditBtn className="invisible" />
 			</Header>
@@ -25,7 +25,12 @@ function PassSettings() {
 								value="chat"
 								defaultChecked
 								onChange={() => {}}
-								className="invisible checked:visible"
+								className="hidden peer"
+							/>
+							<img
+								src="/icon-checkmark.svg"
+								alt="check mark icon"
+								className="hidden peer-checked:block"
 							/>
 						</label>
 						<Divider full />
@@ -36,7 +41,12 @@ function PassSettings() {
 								name="language"
 								value="access"
 								onChange={() => {}}
-								className="invisible checked:visible"
+								className="hidden peer"
+							/>
+							<img
+								src="/icon-checkmark.svg"
+								alt="check mark icon"
+								className="hidden peer-checked:block"
 							/>
 						</label>
 					</div>

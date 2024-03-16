@@ -10,7 +10,7 @@ export default {
 			black: "#000",
 			blue: "#567dff",
 			red: "#eb5545",
-			gray: "#8e8e93",
+			gray: "#6E6E72",
 			borderColor: "#232323",
 			darkGray: "#1b1b1b",
 			hover: "#111",

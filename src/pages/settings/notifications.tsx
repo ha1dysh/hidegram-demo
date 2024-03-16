@@ -7,7 +7,7 @@ function Notifications() {
 	return (
 		<>
 			<Header>
-				<BackBtn />
+				<BackBtn to=".." />
 				<span className="text-lg font-semibold">Notifications</span>
 				<EditBtn className="invisible" />
 			</Header>
@@ -21,7 +21,12 @@ function Notifications() {
 						value="true"
 						defaultChecked
 						onChange={() => {}}
-						className="invisible checked:visible"
+						className="hidden peer"
+					/>
+					<img
+						src="/icon-checkmark.svg"
+						alt="check mark icon"
+						className="hidden peer-checked:block"
 					/>
 				</label>
 				<Divider full />
@@ -32,7 +37,12 @@ function Notifications() {
 						name="notifications"
 						value="false"
 						onChange={() => {}}
-						className="invisible checked:visible"
+						className="hidden peer"
+					/>
+					<img
+						src="/icon-checkmark.svg"
+						alt="check mark icon"
+						className="hidden peer-checked:block"
 					/>
 				</label>
 			</div>

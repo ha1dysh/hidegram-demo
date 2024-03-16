@@ -16,14 +16,14 @@ function EditNickname() {
 			<div className="max-w-2xl mx-auto mt-[35px] md:bg-darkGray md:rounded-[10px]">
 				<Input
 					type="text"
-					placeholder="Password"
-					className="md:rounded-[10px] bg-black md:bg-darkGray"
+					placeholder="Text Field"
+					className="md:rounded-[10px] bg-black md:bg-darkGray text-xl border border-borderColor border-x-0 md:border-0"
 				/>
-				<Divider full />
+				<Divider className="hidden md:block" full />
 				<Input
 					type="text"
-					placeholder="Change Nickname"
-					className="md:rounded-[10px] bg-black md:bg-darkGray"
+					placeholder="Last Name"
+					className="md:rounded-[10px] bg-black md:bg-darkGray text-xl border border-borderColor border-t-0 border-x-0 md:border-0"
 				/>
 			</div>
 		</>

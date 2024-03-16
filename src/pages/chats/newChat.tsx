@@ -10,7 +10,7 @@ function NewChat() {
 		<>
 			<Header>
 				<BackBtn />
-				<span>New Chat</span>
+				<span className="text-lg font-semibold">New Chat</span>
 				<EditButton />
 			</Header>
 

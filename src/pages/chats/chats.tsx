@@ -21,11 +21,14 @@ function Chats() {
 	return (
 		<>
 			<SidebarWrapper>
-				<Header className="h-[60px] md:h-[70px] gap-4 border-none">
+				<Header className="md:h-[70px] gap-4 border-none">
 					<EditBtn className="text-left md:hidden" />
 
 					<div className="relative hidden w-full md:block">
-						<Input className="h-9 pl-9 rounded-[10px]" />
+						<Input
+							placeholder="Search"
+							className="h-9 pl-9 rounded-[10px]"
+						/>
 						<img
 							src={SearchIcon}
 							alt="search icon"
@@ -33,7 +36,7 @@ function Chats() {
 						/>
 					</div>
 
-					<div className="text-lg font-medium md:hidden md:text-base">
+					<div className="text-lg font-semibold md:hidden md:text-base">
 						Chats
 					</div>
 
@@ -46,7 +49,7 @@ function Chats() {
 					</NavLink>
 				</Header>
 
-				<Scrollable className="h-[calc(100%-130px)] md:h-[calc(100%-120px)] py-0 gap-0">
+				<Scrollable className="h-[calc(100%-124px)] md:h-[calc(100%-120px)] py-0 gap-0">
 					{fakeChats.map((chat) => {
 						return (
 							<div key={chat.id}>
@@ -54,7 +57,7 @@ function Chats() {
 									<NavLink
 										to={`user-id-${chat.id}`}
 										className={twMerge(
-											"grid grid-cols-8 grid-rows-2 p-4 cursor-pointer hover:bg-hover",
+											"h-[76px] p-4 grid grid-cols-8 grid-rows-2 cursor-pointer hover:bg-hover",
 											active.includes(
 												`user-id-${chat.id}`
 											) && "bg-hover"

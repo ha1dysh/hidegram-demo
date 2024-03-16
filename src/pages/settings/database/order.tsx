@@ -21,7 +21,12 @@ function Order() {
 						value="AZ"
 						defaultChecked
 						onChange={() => {}}
-						className="invisible checked:visible"
+						className="hidden peer"
+					/>
+					<img
+						src="/icon-checkmark.svg"
+						alt="check mark icon"
+						className="hidden peer-checked:block"
 					/>
 				</label>
 				<Divider full />
@@ -32,7 +37,12 @@ function Order() {
 						name="order"
 						value="date"
 						onChange={() => {}}
-						className="invisible checked:visible"
+						className="hidden peer"
+					/>
+					<img
+						src="/icon-checkmark.svg"
+						alt="check mark icon"
+						className="hidden peer-checked:block"
 					/>
 				</label>
 			</div>

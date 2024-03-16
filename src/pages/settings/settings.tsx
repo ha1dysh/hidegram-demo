@@ -44,7 +44,7 @@ function Settings() {
 							className="relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">Language</p>
-							<p className="text-[15px] text-gray mr-4">
+							<p className="text-[17px] text-gray mr-[18px]">
 								English
 							</p>
 							<img
@@ -75,7 +75,7 @@ function Settings() {
 							<p className="text-[17px] font-medium">
 								Notifications
 							</p>
-							<p className="text-[15px] text-gray mr-4">
+							<p className="text-[17px] text-gray mr-[18px]">
 								Enabled
 							</p>
 							<img

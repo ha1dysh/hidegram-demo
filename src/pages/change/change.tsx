@@ -18,7 +18,7 @@ function Change() {
 		<>
 			<SidebarWrapper>
 				<Header>
-					<BackBtn className="md:invisible" />
+					<BackBtn className="invisible" />
 					<div className="flex items-center justify-center h-[30px]">
 						<button
 							className={`min-w-[85px] h-[30px] rounded-l-[10px] text-[13px] border border-blue whitespace-nowrap ${
@@ -52,7 +52,7 @@ function Change() {
 								<p className="text-[17px] font-medium">
 									Passwords Settings
 								</p>
-								<p className="text-[15px] text-gray mr-4">
+								<p className="text-[17px] text-gray mr-[18px]">
 									Defined
 								</p>
 								<img
@@ -72,7 +72,7 @@ function Change() {
 								<p className="text-[17px] font-medium">
 									Exchange Method
 								</p>
-								<p className="text-[15px] text-gray mr-4">
+								<p className="text-[17px] text-gray mr-[18px]">
 									Link
 								</p>
 								<img
@@ -93,7 +93,7 @@ function Change() {
 								<p className="text-[17px] font-medium line-clamp-1">
 									Password to Exchange
 								</p>
-								<p className="text-[15px] text-gray mr-4">
+								<p className="text-[17px] text-gray mr-[18px]">
 									hhe246GFE563
 								</p>
 								<img
@@ -113,7 +113,9 @@ function Change() {
 								<p className="text-[17px] font-medium">
 									Waiting Time
 								</p>
-								<p className="text-[15px] text-gray mr-4">30</p>
+								<p className="text-[17px] text-gray mr-[18px]">
+									30
+								</p>
 								<img
 									src="/arrow-right.svg"
 									alt="arrow left icon"
@@ -131,7 +133,7 @@ function Change() {
 								<p className="text-[17px] font-medium">
 									Chat ID
 								</p>
-								<p className="text-[15px] text-gray mr-4">
+								<p className="text-[17px] text-gray mr-[18px]">
 									234885906062
 								</p>
 								<img
@@ -171,7 +173,7 @@ function Change() {
 				{!isSend && (
 					<Scrollable className="h-[calc(100%-124px)] md:h-[calc(100%-110px)] md:px-4">
 						<div>
-							<div className="mb-[6px] ml-[16px] text-gray">
+							<div className="mb-[6px] ml-[16px] text-gray text-sm">
 								EXCHANGE CODE
 							</div>
 							<div className="bg-darkGray flex md:rounded-[10px]">
@@ -188,7 +190,7 @@ function Change() {
 						</div>
 
 						<div>
-							<div className="mb-[6px] ml-[16px] text-gray">
+							<div className="mb-[6px] ml-[16px] text-gray text-sm">
 								EXCHANGE CODE
 							</div>
 							<div className="bg-darkGray flex md:rounded-[10px]">

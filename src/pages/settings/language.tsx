@@ -23,7 +23,7 @@ function Language() {
 	return (
 		<>
 			<Header>
-				<BackBtn />
+				<BackBtn to=".." />
 				<span className="text-lg font-semibold">Language</span>
 				<EditBtn className="invisible" />
 			</Header>
@@ -40,7 +40,6 @@ function Language() {
 						className="absolute left-[26px] top-[9px]"
 					/>
 				</div>
-
 				<div className="md:bg-darkGray md:rounded-[10px]">
 					{languages.map((lang) => (
 						<LangItem key={lang.title} {...lang} />
@@ -55,7 +54,7 @@ export default Language;
 function LangItem(props: (typeof languages)[0]) {
 	return (
 		<>
-			<label className="px-4 py-[24px] flex justify-between h-[58px] items-center cursor-pointer">
+			<label className="h-[58px] px-4 flex justify-between items-center cursor-pointer">
 				<div className="flex flex-col">
 					<span className="text-[17px]">{props.title}</span>
 					<span className="text-[13px]">{props.description}</span>
@@ -65,8 +64,15 @@ function LangItem(props: (typeof languages)[0]) {
 					name="language"
 					defaultChecked={props.title === "English"}
 					value={props.title.toLowerCase()}
-					onChange={() => {}}
-					className="invisible checked:visible"
+					// onChange={(e) => {
+					// 	console.log(e.target.value);
+					// }}
+					className="hidden peer"
+				/>
+				<img
+					src="/icon-checkmark.svg"
+					alt="check mark icon"
+					className="hidden peer-checked:block"
 				/>
 			</label>
 			<Divider full className="last:hidden" />
