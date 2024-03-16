@@ -7,7 +7,7 @@ function ChatId() {
 	return (
 		<>
 			<Header>
-				<BackBtn />
+				<BackBtn to=".." />
 				<span className="text-lg font-semibold">Chat ID</span>
 				<EditBtn className="invisible" />
 			</Header>

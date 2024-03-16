@@ -7,7 +7,7 @@ function WaitingTime() {
 	return (
 		<>
 			<Header>
-				<BackBtn />
+				<BackBtn to=".." />
 				<span className="text-lg font-semibold">Waiting Time</span>
 				<EditBtn className="invisible" />
 			</Header>

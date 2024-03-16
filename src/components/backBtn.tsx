@@ -3,10 +3,15 @@ import { twMerge } from "tailwind-merge";
 
 type Props = React.ComponentProps<"button"> & {
 	className?: string;
+	to?: string | number;
 };
 
-function BackBtn({ className, ...props }: Props) {
+function BackBtn({ className, to = -1, ...props }: Props) {
 	const navigate = useNavigate();
+
+	if (window.innerHeight < 768) {
+		to = -1;
+	}
 
 	return (
 		<button
@@ -14,7 +19,7 @@ function BackBtn({ className, ...props }: Props) {
 				"w-[60px] flex items-center gap-2 text-[17px] text-blue",
 				className
 			)}
-			onClick={() => navigate(-1)}
+			onClick={() => navigate(to as never)}
 			{...props}
 		>
 			<img src="/arrow-left.svg" alt="arrow left icon" />

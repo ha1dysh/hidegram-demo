@@ -18,7 +18,7 @@ function Exchange() {
 					<p className="mb-[6px] pl-4 text-sm text-gray">MY KEYS</p>
 					<div className="bg-darkGray md:rounded-[10px]">
 						<NavLink
-							to="/settings/edit-nickname"
+							to="/change/exchange"
 							className="h-[50px] px-4 flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">
@@ -29,7 +29,7 @@ function Exchange() {
 						<Divider full />
 
 						<NavLink
-							to="/settings/my-access"
+							to="/change/exchange"
 							className="h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">

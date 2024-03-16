@@ -1,10 +1,11 @@
 import { twMerge } from "tailwind-merge";
 
 type Props = React.ComponentProps<"button"> & {
+	children?: React.ReactNode;
 	className?: string;
 };
 
-function EditBtn({ className, ...props }: Props) {
+function EditBtn({ children, className, ...props }: Props) {
 	return (
 		<button
 			{...props}
@@ -13,7 +14,7 @@ function EditBtn({ className, ...props }: Props) {
 				className
 			)}
 		>
-			Edit
+			{children || "Edit"}
 		</button>
 	);
 }

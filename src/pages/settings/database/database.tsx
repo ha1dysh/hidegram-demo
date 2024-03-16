@@ -11,7 +11,7 @@ function Database() {
 	return (
 		<>
 			<Header>
-				<BackBtn />
+				<BackBtn to=".." />
 				<span className="text-lg font-semibold">Database</span>
 				<EditBtn className="invisible" />
 			</Header>

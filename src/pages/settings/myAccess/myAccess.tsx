@@ -10,7 +10,7 @@ function MyAccess() {
 	return (
 		<>
 			<Header className="justify-between">
-				<BackBtn />
+				<BackBtn to=".." />
 				<span className="text-lg font-semibold">Access</span>
 				<EditBtn className="invisible" />
 			</Header>
