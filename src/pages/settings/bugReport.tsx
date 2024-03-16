@@ -3,6 +3,7 @@ import BackBtn from "@/components/backBtn";
 import EditBtn from "@/components/editBtn";
 import Scrollable from "@/components/scrollable";
 import Input from "@/components/ui/input";
+import Button from "@/components/ui/button";
 
 function BugReport() {
 	return (
@@ -59,9 +60,8 @@ function BugReport() {
 						className="w-full h-[200px] md:h-[400px] bg-darkGray p-4 md:rounded-[10px] text-[17px] outline-none resize-none placeholder:text-gray"
 					/>
 				</div>
-				<button className="w-full min-h-[44px] px-4 text-blue md:text-left bg-darkGray md:rounded-[10px] mx-auto hover:bg-hover">
-					Send
-				</button>
+
+				<Button>Send</Button>
 			</Scrollable>
 		</>
 	);

@@ -4,6 +4,7 @@ import EditButton from "@/components/editBtn";
 import Input from "@/components/ui/input";
 import Header from "@/components/header";
 import Scrollable from "@/components/scrollable";
+import Button from "@/components/ui/button";
 
 function NewChat() {
 	return (
@@ -99,9 +100,7 @@ function NewChat() {
 					</div>
 				</div>
 
-				<button className="w-full min-h-[44px] max-w-2xl px-4 text-blue md:text-left bg-darkGray md:rounded-[10px] mx-auto">
-					Create New Chat
-				</button>
+				<Button>Create New Chat</Button>
 			</Scrollable>
 		</>
 	);

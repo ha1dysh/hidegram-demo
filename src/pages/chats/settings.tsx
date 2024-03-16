@@ -6,6 +6,7 @@ import Input from "@/components/ui/input";
 import Divider from "@/components/ui/divider";
 import Switcher from "@/components/ui/switcher";
 import Scrollable from "@/components/scrollable";
+import Button from "@/components/ui/button";
 
 function ChatSettings() {
 	return (
@@ -29,7 +30,7 @@ function ChatSettings() {
 			</Header>
 
 			<Scrollable className="items-center md:px-4">
-				<div className="w-full max-w-[626px]">
+				<div className="w-full max-w-2xl">
 					<h2 className="mb-[6px] ml-4 text-gray">CONTACT DATA</h2>
 					<div className="bg-darkGray rounded-[10px]">
 						<Input
@@ -46,7 +47,7 @@ function ChatSettings() {
 					</div>
 				</div>
 
-				<div className="w-full max-w-[626px]">
+				<div className="w-full max-w-2xl">
 					<div className="mb-[6px] ml-[16px] text-gray">
 						CONTACT DATA
 					</div>
@@ -68,7 +69,7 @@ function ChatSettings() {
 					</div>
 				</div>
 
-				<div className="w-full max-w-[626px]">
+				<div className="w-full max-w-2xl">
 					<div className="px-4 text-sm text-gray mb-[6px]">
 						SEARCH TYPE
 					</div>
@@ -82,13 +83,9 @@ function ChatSettings() {
 					</div>
 				</div>
 
-				<button className="w-full max-w-[626px] min-h-[44px] px-4 text-blue md:text-left bg-darkGray md:rounded-[10px] mx-auto">
-					Load To Access
-				</button>
+				<Button>Load To Access</Button>
 
-				<button className="w-full max-w-[626px] min-h-[44px] px-4 text-red md:text-left bg-darkGray md:rounded-[10px] mx-auto">
-					Delete Chat
-				</button>
+				<Button className="text-red">Delete Chat</Button>
 			</Scrollable>
 		</>
 	);

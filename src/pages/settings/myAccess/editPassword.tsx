@@ -3,6 +3,7 @@ import BackBtn from "@/components/backBtn";
 import EditBtn from "@/components/editBtn";
 import Input from "@/components/ui/input";
 import Scrollable from "@/components/scrollable";
+import Button from "@/components/ui/button";
 
 function EditPassword() {
 	return (
@@ -80,9 +81,7 @@ function EditPassword() {
 					</p>
 				</div>
 
-				<button className="w-full min-h-[44px] px-4 text-blue text-center md:text-left bg-darkGray md:rounded-[10px]">
-					Apply
-				</button>
+				<Button>Apply</Button>
 			</Scrollable>
 		</>
 	);

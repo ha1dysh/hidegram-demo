@@ -5,6 +5,7 @@ import EditBtn from "@/components/editBtn";
 import Scrollable from "@/components/scrollable";
 import Switcher from "@/components/ui/switcher";
 import Divider from "@/components/ui/divider";
+import Button from "@/components/ui/button";
 
 function MyAccess() {
 	return (
@@ -109,13 +110,9 @@ function MyAccess() {
 					</div>
 				</div>
 
-				<button className="w-full min-h-[44px] px-4 text-red md:text-left bg-darkGray md:rounded-[10px] hover:bg-hover">
-					Delete Access Data
-				</button>
+				<Button className="text-red">Delete Access Data</Button>
 
-				<button className="w-full min-h-[44px] px-4 text-red md:text-left bg-darkGray md:rounded-[10px] hover:bg-hover">
-					Log Out
-				</button>
+				<Button className="text-red">Log Out</Button>
 			</Scrollable>
 		</>
 	);

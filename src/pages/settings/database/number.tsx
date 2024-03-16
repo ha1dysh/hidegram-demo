@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import BackBtn from "@/components/backBtn";
 import EditBtn from "@/components/editBtn";
 import Input from "@/components/ui/input";
+import Button from "@/components/ui/button";
 
 function Number() {
 	return (
@@ -19,9 +20,7 @@ function Number() {
 					Turn this off if you want to receive notifications only from
 					your active account.
 				</div>
-				<button className="w-full min-h-[44px] mt-[35px] px-4 text-blue md:text-left bg-darkGray md:rounded-[10px] mx-auto">
-					Apply
-				</button>
+				<Button className="mt-[35px]">Apply</Button>
 			</div>
 		</>
 	);

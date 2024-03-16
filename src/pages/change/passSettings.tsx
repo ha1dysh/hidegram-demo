@@ -2,6 +2,7 @@ import BackBtn from "@/components/backBtn";
 import EditBtn from "@/components/editBtn";
 import Header from "@/components/header";
 import Scrollable from "@/components/scrollable";
+import Button from "@/components/ui/button";
 import Divider from "@/components/ui/divider";
 import Input from "@/components/ui/input";
 
@@ -77,9 +78,7 @@ function PassSettings() {
 					</div>
 				</div>
 
-				<button className="w-full min-h-[44px] px-4 text-blue md:text-left bg-darkGray md:rounded-[10px]">
-					Apply
-				</button>
+				<Button>Apply</Button>
 			</Scrollable>
 		</>
 	);
