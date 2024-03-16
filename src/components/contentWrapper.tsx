@@ -1,10 +1,19 @@
 import { routes } from "@/router";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 
 function ContentWrapper({ children }: { children: React.ReactNode }) {
-	const isMobile = window.innerWidth < 768;
+	const [width, setWidth] = useState(() => window.innerWidth);
 	const location = useLocation().pathname;
+
+	useEffect(() => {
+		const updateWidth = () => {
+			setWidth(window.innerWidth);
+		};
+		window.addEventListener("resize", updateWidth);
+		return () => window.removeEventListener("resize", updateWidth);
+	}, []);
 
 	// prettier-ignore
 	const isActiveLocation = [...routes[0].children]
@@ -16,7 +25,7 @@ function ContentWrapper({ children }: { children: React.ReactNode }) {
 		<main
 			className={twMerge(
 				"w-full h-full hidden md:block bg-black",
-				isMobile && "absolute top-0",
+				width < 768 && "absolute top-0",
 				isActiveLocation ? "block" : "hidden"
 			)}
 		>
