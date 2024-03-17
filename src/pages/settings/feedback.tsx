@@ -4,6 +4,7 @@ import EditBtn from "@/components/editBtn";
 import Scrollable from "@/components/scrollable";
 import Input from "@/components/ui/input";
 import Button from "@/components/ui/button";
+import Textarea from "@/components/ui/textarea";
 
 function Feedback() {
 	return (
@@ -55,9 +56,9 @@ function Feedback() {
 					<div className="px-4 text-sm text-gray mb-[6px]">
 						NUMBER
 					</div>
-					<textarea
+					<Textarea
 						placeholder="Write Your Feedback"
-						className="w-full h-[200px] md:h-[400px] bg-darkGray p-4 md:rounded-[10px] text-[17px] outline-none resize-none placeholder:text-gray"
+						className="h-[200px] md:h-[400px]"
 					/>
 				</div>
 

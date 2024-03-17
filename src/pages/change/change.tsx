@@ -24,7 +24,7 @@ function Change() {
 							className={`min-w-[85px] h-[30px] rounded-l-[10px] text-[13px] border border-blue whitespace-nowrap ${
 								isSend && "bg-blue"
 							}`}
-							onClick={() => setIsSend((s) => !s)}
+							onClick={() => setIsSend((s) => s || !s)}
 						>
 							To Send
 						</button>
@@ -32,7 +32,7 @@ function Change() {
 							className={`min-w-[85px] h-[30px] rounded-r-[10px] text-[13px] border border-blue whitespace-nowrap ${
 								!isSend && "bg-blue"
 							}`}
-							onClick={() => setIsSend((s) => !s)}
+							onClick={() => setIsSend((s) => s && !s)}
 						>
 							To Get
 						</button>
