@@ -80,14 +80,16 @@ function Data() {
 					<div className="px-4 text-sm text-gray mb-[6px]">
 						DEFAULT DATA USAGE
 					</div>
-					<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-t-[10px] text-[17px] hover:bg-hover cursor-pointer">
-						<span>Load To Chat</span>
-						<Switcher />
-					</label>
-					<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-b-[10px] text-[17px] hover:bg-hover cursor-pointer">
-						<span>Save Unread Messages</span>
-						<Switcher />
-					</label>
+
+					<Switcher
+						label="Load To Chat"
+						classNameLabel="md:rounded-t-[10px]"
+					/>
+
+					<Switcher
+						label="Save Unread Messages"
+						classNameLabel="md:rounded-b-[10px]"
+					/>
 				</div>
 
 				<Button className="text-red">Delete Password</Button>

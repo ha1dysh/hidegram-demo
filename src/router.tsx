@@ -3,6 +3,7 @@ import Layout from "./pages/layout.tsx";
 import NotFound from "./pages/notFound.tsx";
 
 import Access from "./pages/access/access.tsx";
+import Data from "./pages/access/data.tsx";
 
 import Change from "./pages/change/change.tsx";
 import ExchangeMethod from "./pages/change/exchangeMethod.tsx";
@@ -30,7 +31,6 @@ import Notifications from "./pages/settings/notifications.tsx";
 import Feedback from "./pages/settings/feedback.tsx";
 import BugReport from "./pages/settings/bugReport.tsx";
 import ChatId from "./pages/change/chatId.tsx";
-import Data from "./pages/access/data.tsx";
 
 export const routes = [
 	{

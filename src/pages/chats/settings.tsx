@@ -73,10 +73,10 @@ function ChatSettings() {
 					<div className="px-4 text-sm text-gray mb-[6px]">
 						SEARCH TYPE
 					</div>
-					<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-[10px] text-[17px] mb-[9px] hover:bg-hover cursor-pointer">
-						<span>I Saved My Password</span>
-						<Switcher />
-					</label>
+					<Switcher
+						label="I Saved My Password"
+						classNameLabel="mb-[9px] md:rounded-[10px]"
+					/>
 					<div className="px-4 text-sm text-gray">
 						Turn this off if you want to receive notifications only
 						from your active account.

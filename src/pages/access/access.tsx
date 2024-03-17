@@ -28,10 +28,10 @@ function Access() {
 						<div className="px-4 text-sm text-gray mb-[6px]">
 							SHOW PASSWORDS IN CHATS
 						</div>
-						<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-[10px] text-[17px] mb-[9px] hover:bg-hover cursor-pointer">
-							<span>Load All Chats</span>
-							<Switcher />
-						</label>
+						<Switcher
+							label="Load All Chats"
+							classNameLabel="md:rounded-[10px] mb-[9px]"
+						/>
 					</div>
 
 					<div className="bg-darkGray md:rounded-[10px]">

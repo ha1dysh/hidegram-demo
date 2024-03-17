@@ -69,28 +69,19 @@ function MyAccess() {
 						CHAT SETTINGS
 					</p>
 					<div className="bg-darkGray md:rounded-[10px]">
-						<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-t-[10px] text-[17px] hover:bg-hover cursor-pointer">
-							<span className="select-none">
-								Save Unread Messages
-							</span>
-							<Switcher />
-						</label>
+						<Switcher
+							label="Save Unread Messages"
+							classNameLabel="md:rounded-t-[10px]"
+						/>
 						<Divider full />
 
-						<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 text-[17px] hover:bg-hover cursor-pointer">
-							<span className="select-none">
-								Load All Chats On Connection
-							</span>
-							<Switcher />
-						</label>
+						<Switcher label="Load All Chats On Connection" />
 						<Divider full />
 
-						<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-b-[10px] text-[17px] hover:bg-hover cursor-pointer">
-							<span className="select-none">
-								Provide Default Data in Change
-							</span>
-							<Switcher />
-						</label>
+						<Switcher
+							label="Provide Default Data in Change"
+							classNameLabel="md:rounded-b-[10px]"
+						/>
 					</div>
 				</div>
 
@@ -98,12 +89,10 @@ function MyAccess() {
 					<div className="px-4 text-sm text-gray mb-[6px]">
 						SYNCHRONIZATION
 					</div>
-					<label className="flex items-center justify-between bg-darkGray h-[50px] px-4 md:rounded-[10px] text-[17px] mb-[9px] hover:bg-hover cursor-pointer">
-						<span className="select-none">
-							Save Settings To Access
-						</span>
-						<Switcher />
-					</label>
+					<Switcher
+						label="Save Settings To Access"
+						classNameLabel="mb-[9px] md:rounded-[10px]"
+					/>
 					<div className="px-4 text-sm text-gray">
 						Turn this off if you want to receive notifications only
 						from your active account.
