@@ -30,6 +30,7 @@ import Notifications from "./pages/settings/notifications.tsx";
 import Feedback from "./pages/settings/feedback.tsx";
 import BugReport from "./pages/settings/bugReport.tsx";
 import ChatId from "./pages/change/chatId.tsx";
+import Data from "./pages/access/data.tsx";
 
 export const routes = [
 	{
@@ -37,7 +38,11 @@ export const routes = [
 		element: <Layout />,
 		errorElement: <NotFound />,
 		children: [
-			{ path: "/access", element: <Access />, children: [] },
+			{
+				path: "/access",
+				element: <Access />,
+				children: [{ path: ":data", element: <Data /> }],
+			},
 			{
 				path: "/change",
 				element: <Change />,
