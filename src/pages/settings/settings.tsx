@@ -11,7 +11,7 @@ function Settings() {
 		<>
 			<SidebarWrapper>
 				<Header className="h-[72px] md:pl-[32px] items-end bg-black border-none">
-					<span className="font-bold font-SFPro text-[34px] select-none">
+					<span className="font-bold text-[34px] select-none">
 						Settings
 					</span>
 				</Header>

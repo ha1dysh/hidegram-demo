@@ -88,7 +88,9 @@ export const fakeChats = [
 export const fakeMessages = [
 	{
 		id: "1",
-		content: "Hey, how's it going?",
+		content: {
+			text: "Hey, how's it going?",
+		},
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T12:30:00Z",
 		status: "sent",
@@ -96,7 +98,9 @@ export const fakeMessages = [
 	},
 	{
 		id: "2",
-		content: "Hi Alice! I'm doing well, thanks. How about you?",
+		content: {
+			text: "Hi Alice! I'm doing well, thanks. How about you?",
+		},
 		sender: { id: "user2", name: "Bob" },
 		timestamp: "2022-03-15T12:35:00Z",
 		status: "delivered",
@@ -104,7 +108,9 @@ export const fakeMessages = [
 	},
 	{
 		id: "3",
-		content: "I'm good too. Any exciting plans for the day?",
+		content: {
+			text: "I'm good too. Any exciting plans for the day?",
+		},
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T12:40:00Z",
 		status: "read",
@@ -112,7 +118,9 @@ export const fakeMessages = [
 	},
 	{
 		id: "4",
-		content: "Not really, just work and some errands. How about you?",
+		content: {
+			text: "Not really, just work and some errands. How about you?",
+		},
 		sender: { id: "user2", name: "Bob" },
 		timestamp: "2022-03-15T12:45:00Z",
 		status: "sent",
@@ -120,8 +128,10 @@ export const fakeMessages = [
 	},
 	{
 		id: "5",
-		content:
-			"Same here. It's a regular day. By the way, did you watch the latest movie?",
+		content: {
+			text: "Same here. It's a regular day. By the way, did you watch the latest movie?",
+		},
+
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T12:50:00Z",
 		status: "delivered",
@@ -129,7 +139,9 @@ export const fakeMessages = [
 	},
 	{
 		id: "6",
-		content: "No, not yet. How was it?",
+		content: {
+			text: "No, not yet. How was it?",
+		},
 		sender: { id: "user2", name: "Bob" },
 		timestamp: "2022-03-15T12:55:00Z",
 		status: "sent",
@@ -137,7 +149,9 @@ export const fakeMessages = [
 	},
 	{
 		id: "7",
-		content: "It was fantastic! You should definitely check it out.",
+		content: {
+			text: "It was fantastic! You should definitely check it out.",
+		},
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T13:00:00Z",
 		status: "read",
@@ -145,8 +159,10 @@ export const fakeMessages = [
 	},
 	{
 		id: "8",
-		content:
-			"I'll make sure to watch it this weekend. Thanks for the recommendation!",
+		content: {
+			text: "I'll make sure to watch it this weekend. Thanks for the recommendation!",
+		},
+
 		sender: { id: "user2", name: "Bob" },
 		timestamp: "2022-03-15T13:05:00Z",
 		status: "sent",
@@ -154,8 +170,10 @@ export const fakeMessages = [
 	},
 	{
 		id: "9",
-		content:
-			"You're welcome! Let me know what you think. Anything else new with you?",
+		content: {
+			text: "You're welcome! Let me know what you think. Anything else new with you?",
+		},
+
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T13:10:00Z",
 		status: "delivered",
@@ -163,7 +181,9 @@ export const fakeMessages = [
 	},
 	{
 		id: "10",
-		content: "Not much. Just the usual routine. How about you?",
+		content: {
+			text: "Not much. Just the usual routine. How about you?",
+		},
 		sender: { id: "user2", name: "Bob" },
 		timestamp: "2022-03-15T13:15:00Z",
 		status: "read",
@@ -171,7 +191,9 @@ export const fakeMessages = [
 	},
 	{
 		id: "11",
-		content: "Just busy with work and some personal projects. Time flies!",
+		content: {
+			text: "Just busy with work and some personal projects. Time flies!",
+		},
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T13:20:00Z",
 		status: "sent",
@@ -179,8 +201,10 @@ export const fakeMessages = [
 	},
 	{
 		id: "12",
-		content:
-			"Tell me about it! Anyway, let's catch up soon. Have a great day!",
+		content: {
+			text: "Tell me about it! Anyway, let's catch up soon. Have a great day!",
+		},
+
 		sender: { id: "user2", name: "Bob" },
 		timestamp: "2022-03-15T13:25:00Z",
 		status: "delivered",
@@ -188,7 +212,9 @@ export const fakeMessages = [
 	},
 	{
 		id: "13",
-		content: "Sure thing! You too, Bob. Take care!",
+		content: {
+			text: "Sure thing! You too, Bob. Take care!",
+		},
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T13:30:00Z",
 		status: "read",
@@ -196,7 +222,13 @@ export const fakeMessages = [
 	},
 	{
 		id: "14",
-		content: "Bye for now!",
+		content: {
+			text: "Bye for now!",
+			file: {
+				type: "image",
+				url: "/horizontal.png",
+			},
+		},
 		sender: { id: "user2", name: "Bob" },
 		timestamp: "2022-03-15T13:35:00Z",
 		status: "sent",
@@ -204,7 +236,9 @@ export const fakeMessages = [
 	},
 	{
 		id: "15",
-		content: "Goodbye, Alice!",
+		content: {
+			text: "Goodbye, Alice!",
+		},
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T13:40:00Z",
 		status: "delivered",

@@ -21,13 +21,13 @@ function Chats() {
 	return (
 		<>
 			<SidebarWrapper>
-				<Header className="md:h-[70px] gap-4 border-none">
+				<Header className="md:h-[70px] md:p-[14px] md:gap-[14px] border-none">
 					<EditBtn className="text-left md:hidden" />
 
 					<div className="relative hidden w-full md:block">
 						<Input
 							placeholder="Search"
-							className="h-9 pl-9 rounded-[10px]"
+							className="h-9 pl-[32px] rounded-[10px]"
 						/>
 						<img
 							src={SearchIcon}
@@ -40,7 +40,7 @@ function Chats() {
 						Chats
 					</div>
 
-					<NavLink to="/chats/new-chat" className="w-[55px] ">
+					<NavLink to="/chats/new-chat" className="w-[55px] md:w-fit">
 						<img
 							src={NewChatIcon}
 							alt="new chat icon"
@@ -72,8 +72,10 @@ function Chats() {
 										<div className="col-span-7 line-clamp-1 text-[15px] text-gray">
 											{chat.lastMessage}
 										</div>
-										<div className="relative bottom-[-4px] flex text-sm rounded-full bg-blue justify-self-end size-5 place-content-center">
-											<span>{chat.unreadMessages}</span>
+										<div className="relative bottom-[-4px] min-w-[20px] min-h-[20px] max-h-[20px] flex text-sm justify-self-end place-content-center bg-blue rounded-full">
+											<span className="leading-normal px-1.5">
+												{chat.unreadMessages}
+											</span>
 										</div>
 									</NavLink>
 								</li>

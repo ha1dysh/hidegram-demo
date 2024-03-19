@@ -35,19 +35,29 @@ function Messages() {
 					return (
 						<li
 							key={message.id}
-							className={`md:bg-darkGray px-4 py-3 rounded-tr-xl rounded-bl-xl ${
+							className={`md:bg-darkGray pl-3 px-[6px] pr-[8px] md:px-[18px] pt-3 pb-[6px] rounded-tr-2xl rounded-bl-2xl md:rounded-tr-[14px] md:rounded-bl-[14px] ${
 								bob
-									? "self-end rounded-tl-xl bg-blue"
-									: "self-start rounded-br-xl bg-darkGray"
+									? "max-w-[calc(80%)] self-end rounded-tl-2xl md:rounded-tl-[14px] bg-blue"
+									: "max-w-[calc(80%)] self-start rounded-br-2xl md:rounded-br-[14px] bg-darkGray"
 							}`}
 						>
-							<div className="text-[17px] md:text-sm">
-								{message.content}
+							<div className="mb-1 text-[17px] md:text-sm">
+								{message.content.file?.type === "image" && (
+									<img
+										src={message.content.file.url}
+										alt="image file"
+										className="mb-4"
+									/>
+								)}
+								{message.content.text}
 							</div>
 							<div
-								className={`text-[11px] md:text-xs text-[#D7D7D7] ${
-									bob && "text-right"
-								}`}
+								className={twMerge(
+									"text-[11px] md:text-xs text-gray text-right",
+									bob
+										? "text-[#D7D7D7] md:text-gray"
+										: "text-gray"
+								)}
 							>
 								{new Date(message.timestamp)
 									.toLocaleTimeString()

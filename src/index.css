@@ -2,40 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: SFPro;
-	src: url("/fonts/SF-Pro.ttf");
-}
-@font-face {
-	font-family: SFPro-Text;
-	src: url("/fonts/SF-Pro-Text-Light.otf");
-	font-weight: 300;
-}
-
-@font-face {
-	font-family: SFPro-Text;
-	src: url("/fonts/SF-Pro-Text-Regular.otf");
-	font-weight: 400;
-}
-
-@font-face {
-	font-family: SFPro-Text;
-	src: url("/fonts/SF-Pro-Text-Medium.otf");
-	font-weight: 500;
-}
-
-@font-face {
-	font-family: SFPro-Text;
-	src: url("/fonts/SF-Pro-Text-Semibold.otf");
-	font-weight: 600;
-}
-
-@font-face {
-	font-family: SFPro-Text;
-	src: url("/fonts/SF-Pro-Text-Bold.otf");
-	font-weight: 700;
-}
-
 html,
 body,
 :root,
@@ -44,7 +10,7 @@ body,
 }
 
 body {
-	font-family: SFPro-Text;
+	font-family: Inter;
 	letter-spacing: -0.15px;
 }
 

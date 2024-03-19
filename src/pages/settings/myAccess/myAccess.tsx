@@ -52,7 +52,7 @@ function MyAccess() {
 								Default Nickname
 							</p>
 							<div className="flex gap-4">
-								<p className="text-[15px] text-gray">
+								<p className="text-[17px] text-gray">
 									Unknownuser5213
 								</p>
 								<img
