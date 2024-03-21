@@ -88,9 +88,8 @@ export const fakeChats = [
 export const fakeMessages = [
 	{
 		id: "1",
-		content: {
-			text: "Hey, how's it going?",
-		},
+		type: "text",
+		content: "Hey, how's it going?",
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T12:30:00Z",
 		status: "sent",
@@ -98,9 +97,9 @@ export const fakeMessages = [
 	},
 	{
 		id: "2",
-		content: {
-			text: "Hi Alice! I'm doing well, thanks. How about you?",
-		},
+		type: "text",
+		content:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque minus, laborum tenetur ullam numquam accusamus impedit nemo optio fugit.",
 		sender: { id: "user2", name: "Bob" },
 		timestamp: "2022-03-15T12:35:00Z",
 		status: "delivered",
@@ -108,9 +107,9 @@ export const fakeMessages = [
 	},
 	{
 		id: "3",
-		content: {
-			text: "I'm good too. Any exciting plans for the day?",
-		},
+		type: "text",
+		content:
+			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit alias minus quidem. A et maiores vero, enim minima quos necessitatibus maxime atque id quia veniam impedit, omnis, vel cupiditate totam?",
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T12:40:00Z",
 		status: "read",
@@ -118,129 +117,57 @@ export const fakeMessages = [
 	},
 	{
 		id: "4",
-		content: {
-			text: "Not really, just work and some errands. How about you?",
-		},
+		type: "text",
+		content:
+			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit alias minus quidem. A et maiores vero",
+		sender: { id: "user1", name: "Jon" },
+		timestamp: "2022-03-15T12:40:00Z",
+		status: "read",
+		isRead: true,
+	},
+	{
+		id: "5",
+		type: "text",
+		content: "Lorem, ipsum dolor sit amet",
+		sender: { id: "user1", name: "Bob" },
+		timestamp: "2022-03-15T12:40:00Z",
+		status: "read",
+		isRead: true,
+	},
+	{
+		id: "6",
+		type: "text",
+		content:
+			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit alias minus quidem. A et maiores vero, enim minima",
+		sender: { id: "user1", name: "Alice" },
+		timestamp: "2022-03-15T12:40:00Z",
+		status: "read",
+		isRead: true,
+	},
+	{
+		id: "7",
+		type: "text",
+		content: "Lorem, ipsum dolor sit amet",
+		sender: { id: "user1", name: "Alice" },
+		timestamp: "2022-03-15T12:40:00Z",
+		status: "read",
+		isRead: true,
+	},
+	{
+		id: "8",
+		type: "image",
+		content: "/image-example.png",
 		sender: { id: "user2", name: "Bob" },
 		timestamp: "2022-03-15T12:45:00Z",
 		status: "sent",
 		isRead: false,
 	},
 	{
-		id: "5",
-		content: {
-			text: "Same here. It's a regular day. By the way, did you watch the latest movie?",
-		},
-
+		id: "9",
+		type: "image",
+		content: "/horizontal.png",
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T12:50:00Z",
-		status: "delivered",
-		isRead: true,
-	},
-	{
-		id: "6",
-		content: {
-			text: "No, not yet. How was it?",
-		},
-		sender: { id: "user2", name: "Bob" },
-		timestamp: "2022-03-15T12:55:00Z",
-		status: "sent",
-		isRead: false,
-	},
-	{
-		id: "7",
-		content: {
-			text: "It was fantastic! You should definitely check it out.",
-		},
-		sender: { id: "user1", name: "Alice" },
-		timestamp: "2022-03-15T13:00:00Z",
-		status: "read",
-		isRead: true,
-	},
-	{
-		id: "8",
-		content: {
-			text: "I'll make sure to watch it this weekend. Thanks for the recommendation!",
-		},
-
-		sender: { id: "user2", name: "Bob" },
-		timestamp: "2022-03-15T13:05:00Z",
-		status: "sent",
-		isRead: false,
-	},
-	{
-		id: "9",
-		content: {
-			text: "You're welcome! Let me know what you think. Anything else new with you?",
-		},
-
-		sender: { id: "user1", name: "Alice" },
-		timestamp: "2022-03-15T13:10:00Z",
-		status: "delivered",
-		isRead: true,
-	},
-	{
-		id: "10",
-		content: {
-			text: "Not much. Just the usual routine. How about you?",
-		},
-		sender: { id: "user2", name: "Bob" },
-		timestamp: "2022-03-15T13:15:00Z",
-		status: "read",
-		isRead: false,
-	},
-	{
-		id: "11",
-		content: {
-			text: "Just busy with work and some personal projects. Time flies!",
-		},
-		sender: { id: "user1", name: "Alice" },
-		timestamp: "2022-03-15T13:20:00Z",
-		status: "sent",
-		isRead: true,
-	},
-	{
-		id: "12",
-		content: {
-			text: "Tell me about it! Anyway, let's catch up soon. Have a great day!",
-		},
-
-		sender: { id: "user2", name: "Bob" },
-		timestamp: "2022-03-15T13:25:00Z",
-		status: "delivered",
-		isRead: false,
-	},
-	{
-		id: "13",
-		content: {
-			text: "Sure thing! You too, Bob. Take care!",
-		},
-		sender: { id: "user1", name: "Alice" },
-		timestamp: "2022-03-15T13:30:00Z",
-		status: "read",
-		isRead: true,
-	},
-	{
-		id: "14",
-		content: {
-			text: "Bye for now!",
-			file: {
-				type: "image",
-				url: "/horizontal.png",
-			},
-		},
-		sender: { id: "user2", name: "Bob" },
-		timestamp: "2022-03-15T13:35:00Z",
-		status: "sent",
-		isRead: false,
-	},
-	{
-		id: "15",
-		content: {
-			text: "Goodbye, Alice!",
-		},
-		sender: { id: "user1", name: "Alice" },
-		timestamp: "2022-03-15T13:40:00Z",
 		status: "delivered",
 		isRead: true,
 	},
