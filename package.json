@@ -12,6 +12,7 @@
 		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
+		"@radix-ui/react-slider": "^1.1.2",
 		"@radix-ui/react-switch": "^1.0.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",

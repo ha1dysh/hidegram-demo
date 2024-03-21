@@ -1,7 +1,10 @@
 import BackBtn from "@/components/backBtn";
 import EditBtn from "@/components/editBtn";
 import Header from "@/components/header";
-import Input from "@/components/ui/input";
+import Scrollable from "@/components/scrollable";
+import Divider from "@/components/ui/divider";
+import Slider from "@/components/ui/slider";
+import Switcher from "@/components/ui/switcher";
 
 function PassToExchange() {
 	return (
@@ -13,25 +16,42 @@ function PassToExchange() {
 				</span>
 				<EditBtn className="invisible" />
 			</Header>
+			<Scrollable>
+				<div className="w-full max-w-2xl mx-auto">
+					<p className="text-gray mb-[6px] px-4 text-sm">
+						CHARACTERS
+					</p>
+					<div className="h-[50px] px-4 flex items-center gap-[14px]  bg-darkGray md:rounded-[10px]">
+						<span>1</span>
 
-			<div className="max-w-2xl mx-auto py-[35px] gap-[35px]">
-				<div className="mb-[6px] ml-[16px] text-gray">MY KEYS</div>
-				<div className="bg-darkGray flex md:rounded-[10px]">
-					<Input
-						type="password"
-						className="text-gray md:rounded-[10px]"
-					/>
-					<img
-						src="/x-icon.svg"
-						alt="show password icon"
-						className="mr-4"
-					/>
+						<Slider />
+						<span>50</span>
+					</div>
+					<p className="mt-[9px] text-gray mb-[6px] px-4 text-sm">
+						Turn this off if you want to receive notifications only
+						from your active account.
+					</p>
 				</div>
-				<div className="px-4 text-sm text-gray mt-[9px]">
-					Turn this off if you want to receive notifications only from
-					your active account.
+
+				<div className="w-full max-w-2xl mx-auto">
+					<p className="mb-[6px] pl-4 text-sm text-gray">MY DATA</p>
+					<div className="bg-darkGray md:rounded-[10px]">
+						<Switcher
+							label="Special Characters"
+							classNameLabel="md:rounded-t-[10px]"
+						/>
+						<Divider full />
+
+						<Switcher label="Chat ID" />
+						<Divider full />
+
+						<Switcher
+							label="Verification Phrase"
+							classNameLabel="md:rounded-b-[10px]"
+						/>
+					</div>
 				</div>
-			</div>
+			</Scrollable>
 		</>
 	);
 }
