@@ -3,7 +3,6 @@ import BackBtn from "@/components/backBtn";
 import EditBtn from "@/components/editBtn";
 import Scrollable from "@/components/scrollable";
 import Divider from "@/components/ui/divider";
-import Input from "@/components/ui/input";
 
 const languages = [
 	{ title: "English", description: "English" },
@@ -22,24 +21,13 @@ const languages = [
 function Language() {
 	return (
 		<>
-			<Header>
+			<Header className="bg-black">
 				<BackBtn to=".." />
 				<span className="text-lg font-semibold">Language</span>
 				<EditBtn className="invisible" />
 			</Header>
 
-			<Scrollable className="max-w-2xl gap-2 mx-auto">
-				<div className="relative w-full px-4 mb-2 md:hidden">
-					<Input
-						placeholder="Search"
-						className="h-9 pl-9 rounded-[10px]"
-					/>
-					<img
-						src="/search-icon.svg"
-						alt="search icon"
-						className="absolute left-[26px] top-[9px]"
-					/>
-				</div>
+			<Scrollable className="max-w-2xl gap-2 mx-auto py-[7px]">
 				<div className="md:bg-darkGray md:rounded-[10px]">
 					{languages.map((lang) => (
 						<LangItem key={lang.title} {...lang} />
