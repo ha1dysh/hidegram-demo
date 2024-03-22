@@ -49,11 +49,11 @@ function Messages() {
 			</Scrollable>
 
 			<form className="h-[58px] md:h-[50px] flex border-t border-borderColor bg-darkGray md:bg-black">
-				<label className="min-w-fit max-w-[50px] max-h-[50px] pt-[15px] pr-3 pl-[14px] flex">
+				<label className="max-w-[50px] max-h-[50px] pt-[15px] pr-3 pl-[14px] flex">
 					<img
 						src="/icon-plus.svg"
 						alt="add file icon"
-						className="size-[19px]"
+						className="min-w-[19px] min-h-[19px] size-[19px]"
 					/>
 					<input type="file" className="w-0 h-0 opacity-0" />
 				</label>
