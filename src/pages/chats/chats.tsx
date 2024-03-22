@@ -1,11 +1,9 @@
-import { NavLink, Outlet, useLocation } from "react-router-dom";
-import { twMerge } from "tailwind-merge";
+import { NavLink, Outlet } from "react-router-dom";
 
 import SidebarWrapper from "@/components/sidebarWrapper";
 import ContentWrapper from "@/components/contentWrapper";
 import Menu from "@/components/menu/menu";
 import Input from "@/components/ui/input";
-import Divider from "@/components/ui/divider";
 import Header from "@/components/header";
 import EditBtn from "@/components/editBtn";
 
@@ -14,15 +12,22 @@ import NewChatIcon from "/icon-new-chat.svg";
 
 import { fakeChats } from "../../../fakeData";
 import Scrollable from "@/components/scrollable";
+import { useState } from "react";
+import ChatItem from "./chatItem";
 
 function Chats() {
-	const active = useLocation().pathname;
+	const [isEdit, setIsEdit] = useState(false);
 
 	return (
 		<>
 			<SidebarWrapper>
 				<Header className="md:h-[70px] md:p-[14px] md:gap-[14px] border-none">
-					<EditBtn className="text-left md:hidden" />
+					<EditBtn
+						className="text-left md:hidden"
+						onClick={() => setIsEdit((s) => !s)}
+					>
+						{isEdit ? "Done" : "Edit"}
+					</EditBtn>
 
 					<div className="relative hidden w-full md:block">
 						<Input
@@ -52,40 +57,7 @@ function Chats() {
 				<Scrollable className="h-[calc(100%-124px)] md:h-[calc(100%-120px)] py-0 gap-0">
 					{fakeChats.map((chat) => {
 						return (
-							<div key={chat.id}>
-								<li>
-									<NavLink
-										to={`user-id-${chat.id}`}
-										className={twMerge(
-											"h-[76px] p-4 grid grid-cols-8 grid-rows-2 cursor-pointer hover:bg-hover",
-											active.includes(
-												`user-id-${chat.id}`
-											) && "bg-hover"
-										)}
-									>
-										<div className="col-span-6 font-medium">
-											{chat.name}
-										</div>
-										<div className="grid col-span-2 text-right text-gray text-[13px] relative top-[-4px]">
-											{chat.date}
-										</div>
-										<div className="col-span-7 line-clamp-1 text-[15px] text-gray">
-											{chat.lastMessage}
-										</div>
-										<div className="relative bottom-[-4px] min-w-[20px] min-h-[20px] max-h-[20px] flex text-sm justify-self-end place-content-center bg-blue rounded-full">
-											<span className="leading-normal px-1.5">
-												{chat.unreadMessages}
-											</span>
-										</div>
-									</NavLink>
-								</li>
-								<Divider
-									className={twMerge(
-										active.includes(`user-id-${chat.id}`) &&
-											"invisible"
-									)}
-								/>
-							</div>
+							<ChatItem key={chat.id} isEdit={isEdit} {...chat} />
 						);
 					})}
 				</Scrollable>

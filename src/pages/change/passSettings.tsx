@@ -58,7 +58,7 @@ function PassSettings() {
 				</div>
 
 				<div>
-					<div className="mb-[6px] ml-[16px] text-gray">
+					<div className="mb-[6px] ml-[16px] text-gray text-sm">
 						DEFINED PASSWORD
 					</div>
 					<div className="bg-darkGray flex md:rounded-[10px]">

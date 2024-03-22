@@ -10,7 +10,7 @@ function Switcher({ label, classNameLabel }: Props) {
 	return (
 		<label
 			className={twMerge(
-				"h-[50px] px-4 flex items-center justify-between bg-darkGray text-[17px] hover:bg-hover cursor-pointer",
+				"h-[50px] px-4 flex items-center justify-between bg-darkGray text-[17px] md:hover:bg-hover cursor-pointer",
 				classNameLabel
 			)}
 		>

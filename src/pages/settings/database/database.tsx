@@ -34,7 +34,7 @@ function Database() {
 							className="h-[50px] px-4 flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">Product</p>
-							<div className="flex gap-4">
+							<div className="flex gap-[13px]">
 								<p className="text-[17px] text-gray">Chat</p>
 								<img
 									src="/arrow-right.svg"
@@ -49,8 +49,8 @@ function Database() {
 							className="h-[50px] px-4 flex justify-between items-center hover:bg-hover cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">Order</p>
-							<div className="flex gap-4">
-								<p className="text-[15px] text-gray">By A-Z</p>
+							<div className="flex gap-[13px]">
+								<p className="text-[17px] text-gray">By A-Z</p>
 								<img
 									src="/arrow-right.svg"
 									alt="arrow left icon"
@@ -64,8 +64,8 @@ function Database() {
 							className="h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer"
 						>
 							<p className="text-[17px] font-medium">Number</p>
-							<div className="flex gap-4">
-								<p className="text-[15px] text-gray">50</p>
+							<div className="flex gap-[13px]">
+								<p className="text-[17px] text-gray">50</p>
 								<img
 									src="/arrow-right.svg"
 									alt="arrow left icon"
@@ -84,7 +84,7 @@ function Database() {
 						SEARCH TYPE
 					</div>
 					<Switcher
-						label="STRICT"
+						label="Strict"
 						classNameLabel="mb-[9px] md:rounded-[10px]"
 					/>
 					<div className="px-4 text-sm text-gray">

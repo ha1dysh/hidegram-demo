@@ -32,13 +32,8 @@ function Messages() {
 				</Header>
 			</NavLink>
 
-			<Scrollable className="h-[calc(100%-112px)] md:h-[calc(100%-110px)] p-[10px] pt-[35px] flex-col-reverse gap-2">
+			<Scrollable className="h-[calc(100%-112px)] md:h-[calc(100%-110px)] p-[10px] pt-[35px] flex-col-reverse gap-0">
 				{fakeMessages.map((message, i) => {
-					console.log(
-						message.sender.name,
-						fakeMessages[i - 1]?.sender.name === message.sender.name
-					);
-
 					return (
 						<MessageItem
 							key={message.id}
@@ -54,11 +49,14 @@ function Messages() {
 			</Scrollable>
 
 			<form className="h-[58px] md:h-[50px] flex border-t border-borderColor bg-darkGray md:bg-black">
-				<label className="min-w-[19px] ml-[14px] mt-[15px] mr-[12px]">
-					<img src="/icon-plus.svg" alt="add file icon" />
+				<label className="min-w-fit pt-[15px] pr-3 pl-[14px] flex">
+					<img
+						src="/icon-plus.svg"
+						alt="add file icon"
+						className="size-[19px]"
+					/>
 					<input type="file" className="w-0 h-0 opacity-0" />
 				</label>
-
 				<Input
 					placeholder="Text"
 					className="h-[38px] mt-[6px] mr-2 bg-black rounded-[20px]"

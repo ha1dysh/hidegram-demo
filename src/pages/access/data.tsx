@@ -54,7 +54,7 @@ function Data() {
 					<span className="px-4 mb-[6px] text-sm text-gray">
 						YOUR PASSWORD
 					</span>
-					<div className="relative">
+					<div className="relative flex">
 						<Textarea placeholder="Password" className="h-[50px]" />
 						<span className="absolute -translate-y-1/2 right-4 top-1/2 text-gray">
 							8UT$ZmF9pd3mgrRhaf8...
