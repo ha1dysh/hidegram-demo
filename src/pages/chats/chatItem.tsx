@@ -5,6 +5,7 @@ import Divider from "@/components/ui/divider";
 
 type Props = {
 	isEdit: boolean;
+	setSelectedChats: React.Dispatch<React.SetStateAction<number[]>>;
 } & (typeof fakeChats)[number];
 function ChatItem({
 	name,
@@ -13,8 +14,17 @@ function ChatItem({
 	date,
 	lastMessage,
 	unreadMessages,
+	setSelectedChats,
 }: Props) {
 	const { pathname } = useLocation();
+
+	function checkboxChange(e: React.ChangeEvent<HTMLInputElement>) {
+		const value = Number(e.target.value);
+
+		setSelectedChats((s) =>
+			s.includes(value) ? s.filter((id) => id !== value) : [...s, value]
+		);
+	}
 
 	return (
 		<>
@@ -24,7 +34,8 @@ function ChatItem({
 						<input
 							type="checkbox"
 							value={id}
-							onChange={() => console.log(id)}
+							onChange={checkboxChange}
+							className="rounded-full text-blue size-5 focus:ring-offset-0 focus:ring-0"
 						/>
 					</div>
 				)}

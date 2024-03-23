@@ -4,23 +4,34 @@ import Header from "@/components/header";
 import Menu from "@/components/menu/menu";
 import Scrollable from "@/components/scrollable";
 import SidebarWrapper from "@/components/sidebarWrapper";
-import Divider from "@/components/ui/divider";
 import Switcher from "@/components/ui/switcher";
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { myData } from "@/../fakeData";
+import AccessItem from "./accessItem";
+import { useState } from "react";
+import Button from "@/components/ui/button";
 
 function Access() {
+	const [isEdit, setIsEdit] = useState(false);
+
 	return (
 		<>
 			<SidebarWrapper>
 				<Header>
-					<EditBtn className="w-fit" />
+					<EditBtn
+						className="text-left"
+						onClick={() => setIsEdit((s) => !s)}
+					>
+						{isEdit ? "Cancel" : "Edit"}
+					</EditBtn>
 					<span className="text-lg font-semibold">Access</span>
-					<img
-						src="/icon-plus.svg"
-						alt="plus icon"
-						className="cursor-pointer"
-					/>
+					<div className="w-[55px]">
+						<img
+							src="/icon-plus.svg"
+							alt="plus icon"
+							className="ml-auto cursor-pointer"
+						/>
+					</div>
 				</Header>
 
 				<Scrollable className="h-[calc(100%-124px)] md:h-[calc(100%-110px)] md:px-4">
@@ -36,12 +47,20 @@ function Access() {
 
 					<div className="bg-darkGray md:rounded-[10px]">
 						{myData.map((data) => {
-							return <AccessItem key={data.id} {...data} />;
+							return (
+								<AccessItem
+									key={data.id}
+									isEdit={isEdit}
+									id={data.id}
+									title={data.title}
+								/>
+							);
 						})}
 					</div>
 				</Scrollable>
 
-				<Menu />
+				{!isEdit && <Menu />}
+				{isEdit && <Button className="h-[70px] text-lg">Delete</Button>}
 			</SidebarWrapper>
 
 			<ContentWrapper>
@@ -52,23 +71,3 @@ function Access() {
 }
 
 export default Access;
-
-function AccessItem(props: (typeof myData)[0]) {
-	return (
-		<>
-			<NavLink
-				to={`/access/data-${props.id}`}
-				className="w-full h-[58px] px-4 flex justify-between items-center hover:bg-hover first-of-type:rounded-t-[10px] last-of-type:rounded-b-[10px]"
-			>
-				<div className="flex flex-col">
-					<span className="text-[17px] text-left">{props.title}</span>
-					<span className="text-[13px] text-gray">
-						ID: {props.id}
-					</span>
-				</div>
-				<img src="/arrow-right.svg" alt="arrow left icon" />
-			</NavLink>
-			<Divider className="last:hidden" />
-		</>
-	);
-}

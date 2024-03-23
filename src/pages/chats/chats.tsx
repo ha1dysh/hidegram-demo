@@ -14,9 +14,20 @@ import { fakeChats } from "../../../fakeData";
 import Scrollable from "@/components/scrollable";
 import { useState } from "react";
 import ChatItem from "./chatItem";
+import Button from "@/components/ui/button";
 
 function Chats() {
 	const [isEdit, setIsEdit] = useState(false);
+	const [selectedChats, setSelectedChats] = useState<number[]>([]);
+	const [chats, setChats] = useState(fakeChats);
+
+	function onDelete() {
+		setChats((s) =>
+			s.filter((chat) => !selectedChats.some((id) => id === chat.id))
+		);
+		setSelectedChats([]);
+		setIsEdit(false);
+	}
 
 	return (
 		<>
@@ -26,7 +37,7 @@ function Chats() {
 						className="text-left md:hidden"
 						onClick={() => setIsEdit((s) => !s)}
 					>
-						{isEdit ? "Done" : "Edit"}
+						{isEdit ? "Cancel" : "Edit"}
 					</EditBtn>
 
 					<div className="relative hidden w-full md:block">
@@ -55,14 +66,24 @@ function Chats() {
 				</Header>
 
 				<Scrollable className="h-[calc(100%-124px)] md:h-[calc(100%-120px)] py-0 gap-0">
-					{fakeChats.map((chat) => {
+					{chats.map((chat) => {
 						return (
-							<ChatItem key={chat.id} isEdit={isEdit} {...chat} />
+							<ChatItem
+								key={chat.id}
+								isEdit={isEdit}
+								setSelectedChats={setSelectedChats}
+								{...chat}
+							/>
 						);
 					})}
 				</Scrollable>
 
-				<Menu />
+				{!isEdit && <Menu />}
+				{isEdit && (
+					<Button onClick={onDelete} className="h-[70px] text-lg">
+						Delete
+					</Button>
+				)}
 			</SidebarWrapper>
 
 			<ContentWrapper>

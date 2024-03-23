@@ -9,7 +9,7 @@ function Textarea({ className, ...props }: Props) {
 		<textarea
 			{...props}
 			className={twMerge(
-				"w-full px-4 py-3 text-[17px] bg-darkGray md:rounded-[10px] outline-none resize-none overflow-hidden placeholder:text-gray",
+				"w-full px-4 py-3 text-[17px] bg-darkGray md:rounded-[10px] outline-none resize-none overflow-hidden placeholder:text-gray border-none focus:ring-0",
 				className
 			)}
 		/>
