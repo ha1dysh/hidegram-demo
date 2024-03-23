@@ -60,7 +60,11 @@ function Access() {
 				</Scrollable>
 
 				{!isEdit && <Menu />}
-				{isEdit && <Button className="h-[70px] text-lg">Delete</Button>}
+				{isEdit && (
+					<Button className="h-[70px] md:h-[50px] md:rounded-none text-lg">
+						Delete
+					</Button>
+				)}
 			</SidebarWrapper>
 
 			<ContentWrapper>
