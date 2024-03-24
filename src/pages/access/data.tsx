@@ -13,7 +13,7 @@ function Data() {
 		<>
 			<Header>
 				<BackBtn to=".." />
-				<span>Wife 2</span>
+				<span className="text-lg font-semibold">Wife 2</span>
 				<EditBtn />
 			</Header>
 

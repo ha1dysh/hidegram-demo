@@ -1,3 +1,6 @@
+import { useEffect, useState } from "react";
+import { Outlet, useNavigate } from "react-router-dom";
+
 import ContentWrapper from "@/components/contentWrapper";
 import EditBtn from "@/components/editBtn";
 import Header from "@/components/header";
@@ -5,14 +8,18 @@ import Menu from "@/components/menu/menu";
 import Scrollable from "@/components/scrollable";
 import SidebarWrapper from "@/components/sidebarWrapper";
 import Switcher from "@/components/ui/switcher";
-import { Outlet } from "react-router-dom";
-import { myData } from "@/../fakeData";
 import AccessItem from "./accessItem";
-import { useState } from "react";
 import Button from "@/components/ui/button";
 
+import { myData } from "@/../fakeData";
+
 function Access() {
+	const navigate = useNavigate();
 	const [isEdit, setIsEdit] = useState(false);
+
+	useEffect(() => {
+		navigate("/access/signup");
+	}, [navigate]);
 
 	return (
 		<>
