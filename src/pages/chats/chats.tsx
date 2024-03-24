@@ -1,20 +1,19 @@
+import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import SearchIcon from "/search-icon.svg";
+import NewChatIcon from "/icon-new-chat.svg";
 
 import SidebarWrapper from "@/components/sidebarWrapper";
 import ContentWrapper from "@/components/contentWrapper";
 import Menu from "@/components/menu/menu";
 import Input from "@/components/ui/input";
+import Button from "@/components/ui/button";
 import Header from "@/components/header";
 import EditBtn from "@/components/editBtn";
-
-import SearchIcon from "/search-icon.svg";
-import NewChatIcon from "/icon-new-chat.svg";
-
-import { fakeChats } from "../../../fakeData";
 import Scrollable from "@/components/scrollable";
-import { useState } from "react";
 import ChatItem from "./chatItem";
-import Button from "@/components/ui/button";
+
+import { fakeChats } from "@/../fakeData";
 
 function Chats() {
 	const [isEdit, setIsEdit] = useState(false);
@@ -29,14 +28,15 @@ function Chats() {
 		setIsEdit(false);
 	}
 
+	function onEdit() {
+		setIsEdit((s) => (s ? (setSelectedChats([]), !s) : !s));
+	}
+
 	return (
 		<>
 			<SidebarWrapper>
 				<Header className="md:h-[70px] md:p-[14px] md:gap-[14px] border-none">
-					<EditBtn
-						className="text-left md:hidden"
-						onClick={() => setIsEdit((s) => !s)}
-					>
+					<EditBtn className="text-left md:hidden" onClick={onEdit}>
 						{isEdit ? "Cancel" : "Edit"}
 					</EditBtn>
 
