@@ -89,7 +89,7 @@ export const fakeMessages = [
 	{
 		id: "1",
 		type: "text",
-		content: "Hey, how's it going?",
+		content: { text: "Hey, how's it going?" },
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T12:30:00Z",
 		status: "sent",
@@ -98,8 +98,9 @@ export const fakeMessages = [
 	{
 		id: "2",
 		type: "text",
-		content:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque minus, laborum tenetur ullam numquam accusamus impedit nemo optio fugit.",
+		content: {
+			text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque minus, laborum tenetur ullam numquam accusamus impedit nemo optio fugit.",
+		},
 		sender: { id: "user2", name: "Bob" },
 		timestamp: "2022-03-15T12:35:00Z",
 		status: "delivered",
@@ -108,8 +109,9 @@ export const fakeMessages = [
 	{
 		id: "3",
 		type: "text",
-		content:
-			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit alias minus quidem. A et maiores vero, enim minima quos necessitatibus maxime atque id quia veniam impedit, omnis, vel cupiditate totam?",
+		content: {
+			text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit alias minus quidem. A et maiores vero, enim minima quos necessitatibus maxime atque id quia veniam impedit, omnis, vel cupiditate totam?",
+		},
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T12:40:00Z",
 		status: "read",
@@ -118,8 +120,9 @@ export const fakeMessages = [
 	{
 		id: "4",
 		type: "text",
-		content:
-			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit alias minus quidem. A et maiores vero",
+		content: {
+			text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit alias minus quidem. A et maiores vero",
+		},
 		sender: { id: "user1", name: "Jon" },
 		timestamp: "2022-03-15T12:40:00Z",
 		status: "read",
@@ -128,7 +131,7 @@ export const fakeMessages = [
 	{
 		id: "5",
 		type: "text",
-		content: "Lorem, ipsum dolor sit amet",
+		content: { text: "Lorem, ipsum dolor sit amet" },
 		sender: { id: "user1", name: "Bob" },
 		timestamp: "2022-03-15T12:40:00Z",
 		status: "read",
@@ -137,8 +140,9 @@ export const fakeMessages = [
 	{
 		id: "6",
 		type: "text",
-		content:
-			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit alias minus quidem. A et maiores vero, enim minima",
+		content: {
+			text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit alias minus quidem. A et maiores vero, enim minima",
+		},
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T12:40:00Z",
 		status: "read",
@@ -147,7 +151,7 @@ export const fakeMessages = [
 	{
 		id: "7",
 		type: "text",
-		content: "Lorem, ipsum dolor sit amet",
+		content: { text: "Lorem, ipsum dolor sit amet" },
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T12:40:00Z",
 		status: "read",
@@ -155,17 +159,43 @@ export const fakeMessages = [
 	},
 	{
 		id: "8",
+		type: "file",
+		content: {
+			icon: "/pdf-file.svg",
+			title: "Hidegram GMBH File Sending (1),(1)",
+			description: "PDF Document · 4.5 MB",
+		},
+		sender: { id: "user1", name: "Bob" },
+		timestamp: "2022-03-15T12:40:00Z",
+		status: "read",
+		isRead: true,
+	},
+	{
+		id: "9",
+		type: "file",
+		content: {
+			icon: "/pdf-file.svg",
+			title: "Hidegram GMBH File Sending (1),(1)",
+			description: "PDF Document · 4.5 MB",
+		},
+		sender: { id: "user1", name: "Bob" },
+		timestamp: "2022-03-15T12:40:00Z",
+		status: "read",
+		isRead: true,
+	},
+	{
+		id: "10",
 		type: "image",
-		content: "/image-example.png",
+		content: { url: "/image-example.png" },
 		sender: { id: "user2", name: "Bob" },
 		timestamp: "2022-03-15T12:45:00Z",
 		status: "sent",
 		isRead: false,
 	},
 	{
-		id: "9",
+		id: "11",
 		type: "image",
-		content: "/horizontal.png",
+		content: { url: "/horizontal.png" },
 		sender: { id: "user1", name: "Alice" },
 		timestamp: "2022-03-15T12:50:00Z",
 		status: "delivered",
