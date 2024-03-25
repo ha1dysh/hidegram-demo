@@ -32,7 +32,7 @@ function Messages() {
 				</Header>
 			</NavLink>
 
-			<Scrollable className="h-[calc(100%-112px)] md:h-[calc(100%-110px)] p-[10px]  flex-col-reverse gap-0 after:content-[''] after:mt-7">
+			<Scrollable className="h-[calc(100%-112px)] md:h-[calc(100%-110px)] p-[10px]  flex-col-reverse gap-0 after:content-[''] after:mt-7 after:h-[20px]">
 				{fakeMessages.map((message, i) => {
 					return (
 						<MessageItem
