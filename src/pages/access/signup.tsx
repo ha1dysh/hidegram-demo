@@ -57,7 +57,7 @@ function Signup() {
 						DEFAULT DATA USAGE
 					</div>
 
-					<div className="bg-darkGray">
+					<div className="bg-darkGray md:rounded-[10px]">
 						<Switcher
 							label="I Saved My Password"
 							classNameLabel="md:rounded-t-[10px]"

@@ -5,8 +5,11 @@ import Scrollable from "@/components/scrollable";
 import Divider from "@/components/ui/divider";
 import Slider from "@/components/ui/slider";
 import Switcher from "@/components/ui/switcher";
+import { useState } from "react";
 
 function PassToExchange() {
+	const [chars, setChars] = useState(25);
+
 	return (
 		<>
 			<Header>
@@ -24,8 +27,8 @@ function PassToExchange() {
 					<div className="h-[50px] px-4 flex items-center gap-[14px]  bg-darkGray md:rounded-[10px]">
 						<span>1</span>
 
-						<Slider />
-						<span>50</span>
+						<Slider value={chars} setValue={setChars} />
+						<span>{chars}</span>
 					</div>
 					<p className="mt-[9px] text-gray mb-[6px] px-4 text-sm">
 						Turn this off if you want to receive notifications only

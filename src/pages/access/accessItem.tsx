@@ -18,7 +18,7 @@ function AccessItem({ isEdit, id, title }: Props) {
 								type="checkbox"
 								value={id}
 								// onChange={checkboxChange}
-								className="rounded-full text-blue size-5 focus:ring-offset-0 focus:ring-0"
+								className="rounded-full bg-darkGray text-blue size-5 focus:ring-offset-0 focus:ring-0"
 							/>
 						</div>
 					)}

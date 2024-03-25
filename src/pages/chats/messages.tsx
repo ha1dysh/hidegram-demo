@@ -32,7 +32,7 @@ function Messages() {
 				</Header>
 			</NavLink>
 
-			<Scrollable className="h-[calc(100%-112px)] md:h-[calc(100%-110px)] p-[10px] pt-[35px] flex-col-reverse gap-0">
+			<Scrollable className="h-[calc(100%-112px)] md:h-[calc(100%-110px)] p-[10px]  flex-col-reverse gap-0 after:content-[''] after:mt-7">
 				{fakeMessages.map((message, i) => {
 					return (
 						<MessageItem
@@ -59,7 +59,7 @@ function Messages() {
 				</label>
 				<Input
 					placeholder="Text"
-					className="h-[38px] mt-[6px] mr-2 bg-black rounded-[20px]"
+					className="h-[38px] mt-[6px] mr-2 md:pl-0 bg-black rounded-[20px]"
 				/>
 
 				<button className="hidden min-w-32 text-blue md:block">

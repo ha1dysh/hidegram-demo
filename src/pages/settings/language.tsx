@@ -27,7 +27,7 @@ function Language() {
 				<EditBtn className="invisible" />
 			</Header>
 
-			<Scrollable className="max-w-2xl gap-2 mx-auto py-[7px]">
+			<Scrollable className="max-w-2xl gap-2 mx-auto py-[7px] md:py-[35px]">
 				<div className="md:bg-darkGray md:rounded-[10px]">
 					{languages.map((lang) => (
 						<LangItem key={lang.title} {...lang} />

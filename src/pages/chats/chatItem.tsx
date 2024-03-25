@@ -35,7 +35,7 @@ function ChatItem({
 							type="checkbox"
 							value={id}
 							onChange={checkboxChange}
-							className="rounded-full text-blue size-5 focus:ring-offset-0 focus:ring-0"
+							className="bg-black rounded-full text-blue size-5 focus:ring-offset-0 focus:ring-0"
 						/>
 					</div>
 				)}
@@ -55,7 +55,8 @@ function ChatItem({
 			</Wrapper>
 			<Divider
 				className={twMerge(
-					pathname.includes(`user-id-${id}`) && "invisible"
+					pathname.includes(`user-id-${id}`) && "invisible",
+					pathname.includes(`user-id-${id + 1}`) && "invisible"
 				)}
 			/>
 		</>

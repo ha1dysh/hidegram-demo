@@ -163,7 +163,7 @@ function Change() {
 
 						<NavLink
 							to="/change/exchange"
-							className="w-full min-h-[44px] flex items-center px-4 text-blue justify-center md:justify-start bg-darkGray md:rounded-[10px] mx-auto"
+							className="w-full h-[44px] flex items-center text-blue justify-center bg-darkGray md:rounded-[10px] mx-auto"
 						>
 							Exchange
 						</NavLink>
@@ -208,7 +208,7 @@ function Change() {
 
 						<NavLink
 							to="/change/exchange"
-							className="w-full min-h-[44px] flex items-center px-4 text-blue justify-center md:justify-start bg-darkGray md:rounded-[10px] mx-auto"
+							className="w-full h-[44px] flex items-center text-blue justify-center bg-darkGray md:rounded-[10px] mx-auto"
 						>
 							Exchange
 						</NavLink>

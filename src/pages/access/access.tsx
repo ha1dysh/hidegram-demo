@@ -68,7 +68,7 @@ function Access() {
 
 				{!isEdit && <Menu />}
 				{isEdit && (
-					<Button className="h-[70px] md:h-[50px] md:rounded-none text-lg">
+					<Button className="h-[70px] md:h-[50px] md:rounded-none text-lg md:text-center">
 						Delete
 					</Button>
 				)}
