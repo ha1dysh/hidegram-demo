@@ -50,12 +50,12 @@ function Agreement({ setIsShownAgreement }: Props) {
 				</Button>
 
 				<p className="mt-8 text-xs text-center md:hidden text-gray">
-					Tap the
+					Tap the&nbsp;
 					<span className="font-bold underline">
 						Buttons at the bottom
 					</span>
-					of the screen to try the iOS sheet style modal, full or
-					partial
+					&nbsp;of the screen to try the iOS sheet style modal, full
+					or partial
 				</p>
 			</div>
 		</div>

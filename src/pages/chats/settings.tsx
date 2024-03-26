@@ -31,7 +31,9 @@ function ChatSettings() {
 
 			<Scrollable className="items-center md:px-4">
 				<div className="w-full max-w-2xl">
-					<h2 className="mb-[6px] ml-4 text-gray">CONTACT DATA</h2>
+					<h2 className="mb-[6px] ml-4 text-sm text-gray">
+						CONTACT DATA
+					</h2>
 					<div className="bg-darkGray rounded-[10px]">
 						<Input
 							defaultValue="Chat Name"
@@ -48,7 +50,7 @@ function ChatSettings() {
 				</div>
 
 				<div className="w-full max-w-2xl">
-					<div className="mb-[6px] ml-[16px] text-gray">
+					<div className="mb-[6px] ml-[16px] text-sm text-gray">
 						CONTACT DATA
 					</div>
 					<div className="bg-darkGray flex md:rounded-[10px]">

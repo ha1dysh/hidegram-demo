@@ -140,15 +140,15 @@ function MessageItem({
 	return (
 		<li
 			className={twMerge(
-				"max-w-[calc(75%)] md:max-w-[calc(45%)] mt-2 md:bg-darkGray py-[6px] pl-3 pr-2 md:p-[10px]",
-				"rounded-t-[16px] md:rounded-t-[14px] ",
+				"max-w-[calc(75%)] md:max-w-[calc(45%)] mt-2 md:bg-darkGray px-3 py-1.5 pr-2 md:p-[10px] md:pt-1",
+				"rounded-t-[16px] md:rounded-t-[14px]",
 				isPreviousSameAuthor && "mt-1",
 				// prettier-ignore
 				isBob
 					? twMerge("self-end rounded-bl-[16px] rounded-br-[8px] md:rounded-bl-[14px] md:rounded-br-none bg-blue",
-							isPreviousSameAuthor && "rounded-br-[8px] md:rounded-[14px]")
+							isPreviousSameAuthor && "rounded-br-[8px] md:rounded-[14px] md:rounded-r")
 					: twMerge("self-start rounded-bl-[8px] rounded-br-[16px] md:rounded-bl-none md:rounded-br-[14px] bg-darkGray",
-							isPreviousSameAuthor && "rounded-tl-[8px] md:rounded-[14px]" )
+							isPreviousSameAuthor && "rounded-tl-[8px] md:rounded-[14px] md:rounded-l")
 			)}
 		>
 			{isMoreThanTwoAuthors && !isPreviousSameAuthor && (
@@ -165,7 +165,7 @@ function MessageItem({
 				<span className="text-[17px] md:text-sm">{content.text}</span>
 				<span
 					className={twMerge(
-						"relative top-[10px] pl-2 float-end text-[11px] md:text-xs pb-1.5",
+						"relative top-[8px] pl-2 float-end text-[11px] md:text-xs pb-1.5",
 						isBob ? "text-[#D7D7D7] md:text-gray" : "text-gray"
 					)}
 				>

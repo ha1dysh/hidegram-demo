@@ -59,10 +59,10 @@ function Messages() {
 				</label>
 				<Input
 					placeholder="Text"
-					className="h-[38px] mt-[6px] mr-2 md:pl-0 bg-black rounded-[20px]"
+					className="h-[38px] mt-[6px] mr-2 md:pl-0.5 bg-black rounded-[20px]"
 				/>
 
-				<button className="hidden min-w-32 text-blue md:block">
+				<button className="hidden min-w-[112px] mr-4 text-blue md:block">
 					Send message
 				</button>
 

@@ -35,7 +35,7 @@ function Chats() {
 	return (
 		<>
 			<SidebarWrapper>
-				<Header className="md:h-[70px] md:p-[14px] md:gap-[14px] border-none">
+				<Header className="md:h-[58px] md:p-[14px] md:gap-[14px] border-none">
 					<EditBtn className="text-left md:hidden" onClick={onEdit}>
 						{isEdit ? "Cancel" : "Edit"}
 					</EditBtn>
@@ -65,7 +65,7 @@ function Chats() {
 					</NavLink>
 				</Header>
 
-				<Scrollable className="h-[calc(100%-124px)] md:h-[calc(100%-120px)] py-0 gap-0">
+				<Scrollable className="h-[calc(100%-124px)] md:h-[calc(100%-108px)] py-0 gap-0">
 					{chats.map((chat) => {
 						return (
 							<ChatItem
