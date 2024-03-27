@@ -161,11 +161,13 @@ function MessageItem({
 					{sender.name}
 				</p>
 			)}
-			<p>
-				<span className="text-[17px] md:text-sm">{content.text}</span>
+			<p className="flex justify-between">
+				<span className="text-[17px] md:text-sm leading-[22px]">
+					{content.text}
+				</span>
 				<span
 					className={twMerge(
-						"relative top-[8px] pl-2 float-end text-[11px] md:text-xs pb-1.5",
+						"relative top-[8px] pl-2 self-end text-[11px] md:text-xs pb-1.5",
 						isBob ? "text-[#D7D7D7] md:text-gray" : "text-gray"
 					)}
 				>
