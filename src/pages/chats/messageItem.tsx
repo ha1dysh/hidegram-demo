@@ -41,8 +41,8 @@ function MessageItem({
 				{isMoreThanTwoAuthors && !isPreviousSameAuthor && !isBob && (
 					<div
 						className={twMerge(
-							"absolute top-[6px] left-[8px] py-0.5 bg-[#313131b3] rounded-[5px] text-center",
-							"md:h-[25px] md:static md:flex items-center md:rounded-b-none md:rounded-t-[14px] md:pl-[10px] md:text-left",
+							// "absolute top-[6px] left-[8px] py-0.5 bg-[#313131b3] rounded-[5px] text-center",
+							"h-[25px] py-0.5 flex items-center rounded-b-none rounded-t-[14px] pl-[10px] text-left bg-[#313131b3]",
 							isBob && "hidden"
 						)}
 					>
@@ -55,7 +55,8 @@ function MessageItem({
 					src={content.url}
 					alt="image"
 					className={twMerge(
-						"rounded-b-[14px] rounded-t-[14px] md:rounded-t-none",
+						"rounded-b-[14px]",
+						isBob ? "md:rounded-br rounded-t" : "md:rounded-bl",
 						isBob && "md:rounded-t-[14px]"
 					)}
 				/>
@@ -140,14 +141,14 @@ function MessageItem({
 	return (
 		<li
 			className={twMerge(
-				"max-w-[calc(75%)] md:max-w-[calc(45%)] mt-2 md:bg-darkGray px-3 py-1.5 pr-2 md:p-[10px] md:pt-1",
-				"rounded-t-[16px] md:rounded-t-[14px]",
+				"max-w-[calc(75%)] md:max-w-[calc(45%)] mt-2 px-3 py-1.5 pr-2 md:p-[10px] md:pt-1",
+				"rounded-t-[16px] md:rounded-b md:rounded-t-[14px] md:bg-darkGray",
 				isPreviousSameAuthor && "mt-1",
 				// prettier-ignore
 				isBob
-					? twMerge("self-end rounded-bl-[16px] rounded-br-[8px] md:rounded-bl-[14px] md:rounded-br-none bg-blue",
+					? twMerge("self-end rounded-bl-[16px] rounded-br-[8px] md:rounded-bl-[14px] bg-blue",
 							isPreviousSameAuthor && "rounded-br-[8px] md:rounded-[14px] md:rounded-r")
-					: twMerge("self-start rounded-bl-[8px] rounded-br-[16px] md:rounded-bl-none md:rounded-br-[14px] bg-darkGray",
+					: twMerge("self-start rounded-bl-[8px] rounded-br-[16px] md:rounded-br-[14px] bg-darkGray",
 							isPreviousSameAuthor && "rounded-tl-[8px] md:rounded-[14px] md:rounded-l")
 			)}
 		>
@@ -161,13 +162,13 @@ function MessageItem({
 					{sender.name}
 				</p>
 			)}
-			<p className="flex justify-between">
+			<p>
 				<span className="text-[17px] md:text-sm leading-[22px]">
 					{content.text}
 				</span>
 				<span
 					className={twMerge(
-						"relative top-[8px] pl-2 self-end text-[11px] md:text-xs pb-1.5",
+						"relative top-[8px] pl-2 float-end text-[11px] md:text-xs pb-1.5",
 						isBob ? "text-[#D7D7D7] md:text-gray" : "text-gray"
 					)}
 				>
