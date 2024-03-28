@@ -19,7 +19,9 @@ export default function Layout() {
 			<Outlet />
 
 			{isShownAgreement && pathname === "/access/signup" && (
-				<Agreement setIsShownAgreement={setIsShownAgreement} />
+				<div className="absolute inset-0 w-full h-full bg-[#11111199] backdrop-blur-[2px]">
+					<Agreement setIsShownAgreement={setIsShownAgreement} />
+				</div>
 			)}
 		</div>
 	);

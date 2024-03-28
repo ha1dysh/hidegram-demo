@@ -197,6 +197,17 @@ export const fakeMessages = [
 		isRead: true,
 	},
 	{
+		id: "133",
+		type: "text",
+		content: {
+			text: "Test three in a row",
+		},
+		sender: { id: "user1", name: "Alice" },
+		timestamp: "2022-03-15T13:25:00Z",
+		status: "sent",
+		isRead: true,
+	},
+	{
 		id: "14",
 		type: "text",
 		content: { text: "Not really, just some errands." },
@@ -316,6 +327,15 @@ export const fakeMessages = [
 		isRead: true,
 	},
 	{
+		id: "252",
+		type: "image",
+		content: { url: "/image-example-3.webp" },
+		sender: { id: "user1", name: "Alice" },
+		timestamp: "2022-03-15T14:25:00Z",
+		status: "sent",
+		isRead: true,
+	},
+	{
 		id: "37",
 		type: "text",
 		content: {
@@ -331,10 +351,23 @@ export const fakeMessages = [
 		type: "file",
 		content: {
 			icon: "/pdf-file.svg",
-			title: "Hidegram GMBH File Sending (1),(1)",
+			title: "Hidegram GmBh File (1),(2)",
 			description: "PDF Document · 4.5 MB",
 		},
 		sender: { id: "user1", name: "Bob" },
+		timestamp: "2022-03-15T12:40:00Z",
+		status: "read",
+		isRead: true,
+	},
+	{
+		id: "262",
+		type: "file",
+		content: {
+			icon: "/pdf-file.svg",
+			title: "Hidegram GmBh File (1),(2)",
+			description: "PDF Document · 4.5 MB",
+		},
+		sender: { id: "user1", name: "83383" },
 		timestamp: "2022-03-15T12:40:00Z",
 		status: "read",
 		isRead: true,
@@ -344,7 +377,7 @@ export const fakeMessages = [
 		type: "file",
 		content: {
 			icon: "/pdf-file.svg",
-			title: "Hidegram GMBH File Sending (1),(1)",
+			title: "Hidegram GmBh File (1),(2)",
 			description: "PDF Document · 4.5 MB",
 		},
 		sender: { id: "user1", name: "Bob" },
@@ -354,6 +387,15 @@ export const fakeMessages = [
 	},
 	{
 		id: "28",
+		type: "image",
+		content: { url: "/image-example.png" },
+		sender: { id: "user2", name: "Bob" },
+		timestamp: "2022-03-15T12:45:00Z",
+		status: "sent",
+		isRead: false,
+	},
+	{
+		id: "288",
 		type: "image",
 		content: { url: "/image-example.png" },
 		sender: { id: "user2", name: "Bob" },

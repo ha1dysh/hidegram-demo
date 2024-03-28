@@ -31,17 +31,10 @@ function MessageItem({
 
 	if (type === "image") {
 		return (
-			<li
-				className={twMerge(
-					"relative max-w-[80%] md:max-w-[30%] mt-2",
-					isPreviousSameAuthor && "mt-1",
-					isBob ? "self-end" : "self-start"
-				)}
-			>
+			<li className={twMerge("relative")}>
 				{isMoreThanTwoAuthors && !isPreviousSameAuthor && !isBob && (
 					<div
 						className={twMerge(
-							// "absolute top-[6px] left-[8px] py-0.5 bg-[#313131b3] rounded-[5px] text-center",
 							"h-[25px] py-0.5 flex items-center rounded-b-none rounded-t-[14px] pl-[10px] text-left bg-[#313131b3]",
 							isBob && "hidden"
 						)}
@@ -69,7 +62,7 @@ function MessageItem({
 		return (
 			<li
 				className={twMerge(
-					"max-w-[calc(75%)] md:max-w-[calc(45%)] mt-2 md:bg-darkGray py-3 pl-3 pr-2",
+					"py-3 pl-3 pr-2",
 					"rounded-t-[16px] md:rounded-t-[14px] ",
 					isPreviousSameAuthor && "mt-1",
 					// prettier-ignore
@@ -141,7 +134,7 @@ function MessageItem({
 	return (
 		<li
 			className={twMerge(
-				"max-w-[calc(75%)] md:max-w-[calc(45%)] mt-2 px-3 py-1.5 pr-2 md:p-[10px] md:pt-1",
+				"px-3 py-1.5 pr-2 md:p-[10px] md:pt-1",
 				"rounded-t-[16px] md:rounded-b md:rounded-t-[14px] md:bg-darkGray",
 				isPreviousSameAuthor && "mt-1",
 				// prettier-ignore

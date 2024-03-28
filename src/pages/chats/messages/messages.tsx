@@ -5,8 +5,8 @@ import EditButton from "@/components/editBtn";
 import Header from "@/components/header";
 import Input from "@/components/ui/input";
 import Scrollable from "@/components/scrollable";
-
 import MessageItem from "./messageItem";
+
 import { fakeMessages } from "@/../fakeData";
 
 function Messages() {
@@ -34,15 +34,18 @@ function Messages() {
 
 			<Scrollable className="h-[calc(100%-112px)] md:h-[calc(100%-110px)] p-[10px]  flex-col-reverse gap-0 after:content-[''] after:pt-5 after:h-[20px]">
 				{fakeMessages.map((message, i) => {
+					const senderName = message.sender.name;
+					const isSameAuthor = {
+						prev: senderName === fakeMessages[i - 1]?.sender.name,
+						next: senderName === fakeMessages[i + 1]?.sender.name,
+					};
+
 					return (
 						<MessageItem
 							key={message.id}
-							{...message}
+							message={message}
 							isMoreThanTwoAuthors={isMoreThanTwoAuthors}
-							isPreviousSameAuthor={
-								fakeMessages[i + 1]?.sender.name ===
-								message.sender.name
-							}
+							isSameAuthor={isSameAuthor}
 						/>
 					);
 				})}
