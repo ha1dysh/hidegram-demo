@@ -8,8 +8,6 @@ type Props = {
 };
 
 function FileMsg({ message, isMe, isName }: Props) {
-	console.log(message, isName);
-
 	return (
 		<>
 			{isName && (

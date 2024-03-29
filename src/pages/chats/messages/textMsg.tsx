@@ -5,17 +5,17 @@ type Props = {
 	message: Message;
 	isName: boolean;
 	isMe: boolean;
-	isSameAuthor: { prev: boolean; next: boolean };
+	isInBetween: boolean;
 };
 
-function TextMsg({ message, isName, isMe, isSameAuthor }: Props) {
+function TextMsg({ message, isName, isMe, isInBetween }: Props) {
 	return (
 		<>
 			{isName && (
 				<p
 					className={twMerge(
 						"pt-1.5 px-2 md:pt-1",
-						(isSameAuthor.next || isSameAuthor.prev) && "px-2.5",
+						isInBetween && "px-2.5",
 						"text-[15px] md:text-xs font-medium"
 					)}
 				>
@@ -25,7 +25,7 @@ function TextMsg({ message, isName, isMe, isSameAuthor }: Props) {
 			<p
 				className={twMerge(
 					"py-1.5 px-2",
-					(isSameAuthor.next || isSameAuthor.prev) && "p-2.5",
+					isInBetween && "p-2.5",
 					isName && "pt-0"
 				)}
 			>
