@@ -19,18 +19,13 @@ function EditPassword() {
 					<p className="mb-[6px] ml-[16px] text-gray text-sm">
 						ENTER YOUR OLD PASSWORD
 					</p>
-					<div className="bg-darkGray flex md:rounded-[10px]">
-						<Input
-							type="password"
-							placeholder="Text"
-							className="md:rounded-[10px]"
-						/>
-						<img
-							src="/show-password.svg"
-							alt="show password icon"
-							className="mr-4 cursor-pointer"
-						/>
-					</div>
+
+					<Input
+						placeholder="Text"
+						className="md:rounded-[10px]"
+						iconEye
+					/>
+
 					<p className="px-4 text-sm text-gray mt-[9px]">
 						Turn this off if you want to receive notifications only
 						from your active account.
@@ -41,18 +36,13 @@ function EditPassword() {
 					<p className="mb-[6px] ml-[16px] text-gray text-sm">
 						ENTER YOUR NEW PASSWORD
 					</p>
-					<div className="bg-darkGray flex md:rounded-[10px]">
-						<Input
-							type="password"
-							placeholder="Text Field"
-							className="md:rounded-[10px]"
-						/>
-						<img
-							src="/show-password.svg"
-							alt="show password icon"
-							className="mr-4 cursor-pointer"
-						/>
-					</div>
+
+					<Input
+						placeholder="Text Field"
+						className="md:rounded-[10px]"
+						iconEye
+					/>
+
 					<p className="px-4 text-sm text-gray mt-[9px]">
 						Turn this off if you want to receive notifications only
 						from your active account.
@@ -63,18 +53,13 @@ function EditPassword() {
 					<p className="mb-[6px] ml-[16px] text-gray text-sm">
 						CONFIRM PASSWORD
 					</p>
-					<div className="bg-darkGray flex md:rounded-[10px]">
-						<Input
-							type="password"
-							placeholder="Text Field"
-							className="md:rounded-[10px]"
-						/>
-						<img
-							src="/show-password.svg"
-							alt="show password icon"
-							className="mr-4 cursor-pointer"
-						/>
-					</div>
+
+					<Input
+						placeholder="Text Field"
+						className="md:rounded-[10px]"
+						iconEye
+					/>
+
 					<p className="px-4 text-sm text-gray mt-[9px]">
 						Turn this off if you want to receive notifications only
 						from your active account.

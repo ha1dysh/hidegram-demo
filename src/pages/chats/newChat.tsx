@@ -1,6 +1,6 @@
 import Switcher from "@/components/ui/switcher";
 import BackBtn from "@/components/backBtn";
-import EditButton from "@/components/editBtn";
+import EditBtn from "@/components/editBtn";
 import Input from "@/components/ui/input";
 import Header from "@/components/header";
 import Scrollable from "@/components/scrollable";
@@ -12,7 +12,7 @@ function NewChat() {
 			<Header>
 				<BackBtn />
 				<span className="text-lg font-semibold">New Chat</span>
-				<EditButton />
+				<EditBtn />
 			</Header>
 
 			<Scrollable>

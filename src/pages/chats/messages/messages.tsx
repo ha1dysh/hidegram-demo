@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 import BackBtn from "@/components/backBtn";
-import EditButton from "@/components/editBtn";
+import EditBtn from "@/components/editBtn";
 import Header from "@/components/header";
 import Input from "@/components/ui/input";
 import Scrollable from "@/components/scrollable";
@@ -28,7 +28,7 @@ function Messages() {
 						</p>
 					</div>
 
-					<EditButton className="md:hidden" />
+					<EditBtn className="md:hidden" />
 				</Header>
 			</NavLink>
 

@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import BackBtn from "@/components/backBtn";
 import Header from "@/components/header";
-import EditButton from "@/components/editBtn";
+import EditBtn from "@/components/editBtn";
 import Input from "@/components/ui/input";
 import Divider from "@/components/ui/divider";
 import Switcher from "@/components/ui/switcher";
@@ -26,7 +26,7 @@ function ChatSettings() {
 					</p>
 				</div>
 
-				<EditButton />
+				<EditBtn />
 			</Header>
 
 			<Scrollable className="items-center md:px-4">
@@ -53,18 +53,14 @@ function ChatSettings() {
 					<div className="mb-[6px] ml-[16px] text-sm text-gray">
 						CONTACT DATA
 					</div>
-					<div className="bg-darkGray flex md:rounded-[10px]">
-						<Input
-							type="password"
-							defaultValue="Chat Name"
-							className="text-gray md:rounded-[10px]"
-						/>
-						<img
-							src="/show-password.svg"
-							alt="show password icon"
-							className="mr-4"
-						/>
-					</div>
+
+					<Input
+						type="password"
+						defaultValue="Chat Name"
+						iconEye
+						className="text-gray md:rounded-[10px]"
+					/>
+
 					<div className="px-4 text-sm text-gray mt-[9px]">
 						Turn this off if you want to receive notifications only
 						from your active account.
