@@ -69,7 +69,7 @@ function Messages() {
 					Send message
 				</button>
 
-				<button className="md:hidden h-[38px] mt-[6px] mr-[12px]">
+				<button className="md:hidden h-[38px] mt-[6px] mr-[12px] ml-2">
 					<img
 						src="/send-button.svg"
 						alt="send message icon"
