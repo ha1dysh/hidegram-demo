@@ -14,7 +14,7 @@ function TextMsg({ message, isName, isMe, isInBetween }: Props) {
 			{isName && (
 				<p
 					className={twMerge(
-						"pt-1.5 px-2 md:pt-1",
+						"pt-1.5 px-2.5 md:pt-1",
 						isInBetween && "px-2.5",
 						"text-[15px] md:text-xs font-medium"
 					)}
@@ -24,8 +24,8 @@ function TextMsg({ message, isName, isMe, isInBetween }: Props) {
 			)}
 			<p
 				className={twMerge(
-					"py-1.5 px-2",
-					isInBetween && "p-2.5",
+					"py-1 px-2.5",
+					isInBetween && "px-2.5 py-1.5",
 					isName && "pt-0"
 				)}
 			>

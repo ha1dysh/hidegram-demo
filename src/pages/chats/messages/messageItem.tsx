@@ -44,10 +44,12 @@ function MessageItem({ message, isMoreThanTwoAuthors, isSameAuthor }: Props) {
 				isMe
 					? twMerge("self-end bg-blue rounded-l-[14px]", 
 						isFirstMsg && "rounded-tr-[14px]",
-						isLastMsg && "rounded-br-[14px]",)
+						isLastMsg && "rounded-br-[14px]",
+						!isSameAuthor.prev && isSameAuthor.next && 'rounded-tr')
 					: twMerge("self-start bg-darkGray rounded-r-[14px]",
 						isFirstMsg && "rounded-tl-[14px]",
-						isLastMsg && "rounded-bl-[14px]",),
+						isLastMsg && "rounded-bl-[14px]", 
+						!isSameAuthor.prev && isSameAuthor.next && 'rounded-tl'),
 
 				message.type === "image" &&
 					"max-w-[80%] md:max-w-[30%] rounded-t-[14px]",

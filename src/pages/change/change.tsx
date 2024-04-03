@@ -49,7 +49,7 @@ function Change() {
 									"relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer"
 								)}
 							>
-								<p className="text-[17px] font-medium">
+								<p className="text-[17px]">
 									Passwords Settings
 								</p>
 								<p className="text-[17px] text-gray mr-[18px]">
@@ -69,9 +69,7 @@ function Change() {
 									"relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer"
 								)}
 							>
-								<p className="text-[17px] font-medium">
-									Exchange Method
-								</p>
+								<p className="text-[17px]">Exchange Method</p>
 								<p className="text-[17px] text-gray mr-[18px]">
 									Link
 								</p>
@@ -90,7 +88,7 @@ function Change() {
 									"relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer"
 								)}
 							>
-								<p className="text-[17px] font-medium line-clamp-1">
+								<p className="text-[17px] line-clamp-1">
 									Password to Exchange
 								</p>
 								<p className="text-[17px] text-gray mr-[18px]">
@@ -110,9 +108,7 @@ function Change() {
 									"relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover cursor-pointer"
 								)}
 							>
-								<p className="text-[17px] font-medium">
-									Waiting Time
-								</p>
+								<p className="text-[17px]">Waiting Time</p>
 								<p className="text-[17px] text-gray mr-[18px]">
 									30
 								</p>
@@ -130,9 +126,7 @@ function Change() {
 									"relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover cursor-pointer"
 								)}
 							>
-								<p className="text-[17px] font-medium">
-									Chat ID
-								</p>
+								<p className="text-[17px]">Chat ID</p>
 								<p className="text-[17px] text-gray mr-[18px]">
 									234885906062
 								</p>
@@ -150,7 +144,7 @@ function Change() {
 									"relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer"
 								)}
 							>
-								<p className="text-[17px] font-medium">
+								<p className="text-[17px]">
 									Verification Phrase
 								</p>
 								<img

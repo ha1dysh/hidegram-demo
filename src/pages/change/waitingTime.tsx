@@ -13,7 +13,9 @@ function WaitingTime() {
 			</Header>
 
 			<div className="max-w-2xl mx-auto py-[35px] gap-[35px]">
-				<div className="mb-[6px] ml-[16px] text-gray">WAITING TIME</div>
+				<div className="mb-[6px] ml-[16px] text-gray text-sm">
+					WAITING TIME
+				</div>
 				<div className="bg-darkGray flex md:rounded-[10px]">
 					<Input
 						type="password"

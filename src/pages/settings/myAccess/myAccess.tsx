@@ -26,9 +26,7 @@ function MyAccess() {
 							to="/settings/edit-nickname"
 							className="h-[50px] px-4 flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer"
 						>
-							<p className="text-[17px] font-medium">
-								Edit Nickname
-							</p>
+							<p className="text-[17px]">Edit Nickname</p>
 							<img src="/arrow-right.svg" alt="arrow left icon" />
 						</NavLink>
 						<Divider full />
@@ -37,9 +35,7 @@ function MyAccess() {
 							to="/settings/edit-password"
 							className="h-[50px] px-4 flex justify-between items-center hover:bg-hover cursor-pointer"
 						>
-							<p className="text-[17px] font-medium">
-								Edit Password
-							</p>
+							<p className="text-[17px]">Edit Password</p>
 							<img src="/arrow-right.svg" alt="arrow left icon" />
 						</NavLink>
 						<Divider full />
@@ -48,9 +44,7 @@ function MyAccess() {
 							to="/settings/my-access"
 							className="h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer"
 						>
-							<p className="text-[17px] font-medium">
-								Default Nickname
-							</p>
+							<p className="text-[17px]">Default Nickname</p>
 							<div className="flex gap-4">
 								<p className="text-[17px] text-gray">
 									Unknownuser5213

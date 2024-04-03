@@ -43,7 +43,7 @@ function Settings() {
 							to="/settings/language"
 							className="relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer"
 						>
-							<p className="text-[17px] font-medium">Language</p>
+							<p className="text-[17px]">Language</p>
 							<p className="text-[17px] text-gray mr-[18px]">
 								English
 							</p>
@@ -59,7 +59,7 @@ function Settings() {
 							to="/settings/database"
 							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover cursor-pointer"
 						>
-							<p className="text-[17px] font-medium">Database</p>
+							<p className="text-[17px]">Database</p>
 							<img
 								src="/arrow-right.svg"
 								alt="arrow left icon"
@@ -72,9 +72,7 @@ function Settings() {
 							to="/settings/notifications"
 							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer"
 						>
-							<p className="text-[17px] font-medium">
-								Notifications
-							</p>
+							<p className="text-[17px]">Notifications</p>
 							<p className="text-[17px] text-gray mr-[18px]">
 								Enabled
 							</p>
@@ -91,7 +89,7 @@ function Settings() {
 							to="/settings/feedback"
 							className="relative h-[50px] px-[14px] flex justify-between items-center md:rounded-t-[10px] hover:bg-hover cursor-pointer"
 						>
-							<p className="text-[17px] font-medium">Feedback</p>
+							<p className="text-[17px]">Feedback</p>
 							<img
 								src="/arrow-right.svg"
 								alt="arrow left icon"
@@ -104,7 +102,7 @@ function Settings() {
 							to="/settings"
 							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover cursor-pointer"
 						>
-							<p className="text-[17px] font-medium">About</p>
+							<p className="text-[17px]">About</p>
 							<img
 								src="/arrow-right.svg"
 								alt="arrow left icon"
@@ -117,9 +115,7 @@ function Settings() {
 							to="/settings"
 							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover cursor-pointer"
 						>
-							<p className="text-[17px] font-medium">
-								Privacy Policy
-							</p>
+							<p className="text-[17px]">Privacy Policy</p>
 							<img
 								src="/arrow-right.svg"
 								alt="arrow left icon"
@@ -132,9 +128,7 @@ function Settings() {
 							to="/settings/bug-report"
 							className="relative h-[50px] px-[14px] flex justify-between items-center hover:bg-hover md:rounded-b-[10px] cursor-pointer"
 						>
-							<p className="text-[17px] font-medium">
-								Bug Report
-							</p>
+							<p className="text-[17px]">Bug Report</p>
 							<img
 								src="/arrow-right.svg"
 								alt="arrow left icon"
